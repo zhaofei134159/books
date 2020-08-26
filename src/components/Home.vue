@@ -2,7 +2,10 @@
 	<div id="bodyDiv">
 		<div id="containerDiv">
 			<div id="topDiv">
-				<div class="header"></div>
+				<div class="header">
+					<div class="headerLeft">bookfamily</div>
+					<div class="headerRight">登录</div>
+				</div>
 				<el-menu
 				:default-active="activeIndex2"
 				class="el-menu-demo"
@@ -60,7 +63,9 @@ export default {
 	#containerDiv{width:75%;margin:0 auto}
 	#content{width:100%;}
 	#topDiv{width:100%;}
-	.header{width:100%;height:100px;background:red;}
+	.header{width:100%;}
+	.headerLeft{width:50%;padding:20px 0px;text-align:left;background:red;}
+	.headerRight{width:50%;padding:20px 0px;text-align:right;background:yellow;}
 
 	#mainDiv{width:100%;height:800px;background:blue;}
 	#footerDiv{width:100%;height:200px;background:green;}
