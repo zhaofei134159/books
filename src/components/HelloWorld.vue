@@ -1239,6 +1239,15 @@ export default {
 }
 </script>
 
+<link rel="stylesheet" href="static/bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" href="static/fonts/font-awesome/css/font-awesome.css" />
+<link rel="stylesheet" href="static/fonts/fontello/css/fontello.css" />
+<link rel="stylesheet" href="static/plugins/magnific-popup/magnific-popup.css" />
+<link rel="stylesheet" href="static/css/animations.css" />
+<link rel="stylesheet" href="static/plugins/owl-carousel/owl.carousel.css" />
+<link rel="stylesheet" href="static/css/style.css" />
+<link rel="stylesheet" href="static/css/css/skins/red.css" />
+<link rel="stylesheet" href="static/css/custom.css" />
 <style>
 
 </style>
