@@ -1,8 +1,8 @@
 <template>
 	<div id="bodyDiv">
 		<el-container id="containerDiv">
-			<el-header></el-header>
 			<el-header>
+				<el-header>header</el-header>
 				<el-menu
 				:default-active="activeIndex2"
 				class="el-menu-demo"
@@ -28,7 +28,7 @@
 					<el-menu-item index="4"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
 				</el-menu>
 			</el-header>
-			<el-container>
+			<el-container id="content">
 				<el-aside>Aside</el-aside>
 				<el-main>Main</el-main>
 			</el-container>
@@ -58,6 +58,7 @@ export default {
 	body{margin:0px;padding:0px;}
 	#bodyDiv{width:100%;}
 	#containerDiv{width:65%;margin:0 auto}
+	#content{width:100%;}
 	.el-header, .el-footer {
 		background-color: #B3C0D1;
 		color: #333;
