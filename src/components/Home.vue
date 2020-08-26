@@ -28,10 +28,10 @@
 					<el-menu-item index="4"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
 				</el-menu>
 			</el-header>
-			<el-container id="content">
+			<el-main id="content">
 				<el-aside>Aside</el-aside>
 				<el-main>Main</el-main>
-			</el-container>
+			</el-main>
 			<el-footer>Footer</el-footer>
 		</el-container>
 	</div>
