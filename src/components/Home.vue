@@ -1,6 +1,7 @@
 <template>
 	<div id="bodyDiv">
 		<el-container id="containerDiv">
+			<el-header></el-header>
 			<el-header>
 				<el-menu
 				:default-active="activeIndex2"
