@@ -12,12 +12,8 @@
 </template>
 
 <script>
-// import top from '@/components/public/top';
 export default {
 	name: 'Home',
-	// components: {
-	// 	top
-	// }
 	data () {
 		return {
 			msg: 'Welcome to Your Vue.js App'
