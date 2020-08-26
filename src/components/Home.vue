@@ -1,8 +1,8 @@
 <template>
 	<div id="bodyDiv">
-		<el-container id="containerDiv">
-			<el-header>header</el-header>
-			<el-header>
+		<div id="containerDiv">
+			<div id="topDiv">
+				<div class="header">header</div>
 				<el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
 					<el-menu-item index="1">处理中心</el-menu-item>
 					<el-submenu index="2">
@@ -21,13 +21,13 @@
 					<el-menu-item index="4"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
 				</el-menu>
 				<div class="line"></div>
-			</el-header>
-			<el-main id="content">
-				<el-aside>Aside</el-aside>
-				<el-main>Main</el-main>
-			</el-main>
-			<el-footer>Footer</el-footer>
-		</el-container>
+			</div>
+			<div id="mainDiv">
+				<div>Aside</div>
+				<div>Main</div>
+			</div>
+			<div id="footerDiv">Footer</div>
+		</div>
 	</div>
 </template>
 
@@ -51,40 +51,12 @@ export default {
 <style>
 	body{margin:0px;padding:0px;}
 	#bodyDiv{width:100%;}
-	#containerDiv{width:65%;margin:0 auto}
+	#containerDiv{width:75%;margin:0 auto}
 	#content{width:100%;}
-	.el-header, .el-footer {
-		background-color: #B3C0D1;
-		color: #333;
-		text-align: center;
-		line-height: 60px;
-	}
+	#topDiv{width:100%;height:200px;background:red;}
+	.header{width:100%;height:100px;}
 
-	.el-aside {
-		background-color: #D3DCE6;
-		color: #333;
-		text-align: center;
-		line-height: 200px;
-		width:20%;
-	}
+	#mainDiv{width:100%;height:800px;background:blue;}
+	#footerDiv{width:100%;height:200px;background:green;}
 
-	.el-main {
-		background-color: #E9EEF3;
-		color: #333;
-		text-align: center;
-		line-height: 160px;
-	}
-
-	body > .el-container {
-		margin-bottom: 40px;
-	}
-
-	.el-container:nth-child(5) .el-aside,
-	.el-container:nth-child(6) .el-aside {
-		line-height: 260px;
-	}
-
-	.el-container:nth-child(7) .el-aside {
-		line-height: 320px;
-	}
 </style>
