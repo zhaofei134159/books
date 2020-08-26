@@ -29,7 +29,7 @@
 				</el-menu>
 			</el-header>
 			<el-container>
-				<el-aside width="200px">Aside</el-aside>
+				<el-aside>Aside</el-aside>
 				<el-main>Main</el-main>
 			</el-container>
 			<el-footer>Footer</el-footer>
@@ -70,6 +70,7 @@ export default {
 		color: #333;
 		text-align: center;
 		line-height: 200px;
+		width:20%;
 	}
 
 	.el-main {
