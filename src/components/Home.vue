@@ -14,7 +14,7 @@
 <script>
 // import top from '@/components/public/top';
 export default {
-	name: 'HelloWorld',
+	name: 'Home',
 	// components: {
 	// 	top
 	// }
