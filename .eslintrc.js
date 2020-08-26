@@ -21,6 +21,7 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
+    "space-before-function-paren": 0
     // 空格
     'no-tabs': 'off',
     // allow async-await
