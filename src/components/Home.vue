@@ -88,6 +88,7 @@ export default {
 .crumbs div{min-height: 50px;line-height: 50px;font-size: 14px;}
 .mainCont{width:100%;}
 .title{padding: 14px}
+.title span{font-size:15px;}
 
 .time {font-size: 13px;color: #999;}
 .bottom {margin-top: 13px;line-height: 12px;}
