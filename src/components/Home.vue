@@ -68,7 +68,7 @@ export default {
 	.rowDiv{width:80%;margin:0 auto}
 	#content{width:100%;}
 	#topDiv{width:100%;}
-	.header{width:100%;background-color: #232323;}
+	.header{width:100%;background-color: #232323;min-height:50px;}
 	.headerMain{width:82%;margin:0 auto}
 	.headerLeft{width:50%;padding:20px 0px;font-size:20px;color:#9d9d9d;font-weight:bold;text-align:left;float:left;}
 	.headerRight{width:50%;padding:20px 0px;font-size:20px;color:#9d9d9d;font-weight:bold;text-align:right;float:right;}
