@@ -9,7 +9,11 @@
 
 <script>
 export default {
-  name: 'footer'
+  name: 'footer',
+  data() {
+    return {
+    }
+  }
 }
 </script>
 
