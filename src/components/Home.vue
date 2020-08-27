@@ -34,17 +34,17 @@
 				<div>Main</div>
 			</div>
 		</div>
-		<footer></footer>
+		<publicFooter></publicFooter>
 	</div>
 </template>
 
 <script>
 import '../../static/books_css/main.css'
-import footer from '@/components/public/footer'
+import publicFooter from '@/components/public/footer'
 export default {
   name: 'Home',
   components: {
-    footer
+    publicFooter
   },
   data () {
     return {
