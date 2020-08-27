@@ -39,12 +39,12 @@
 </template>
 
 <script>
-import  '../../static/books_css/main.css'
+import '../../static/books_css/main.css'
 import footer from '@/components/public/footer'
 export default {
   name: 'Home',
-  components:{
-    footer:footer
+  components: {
+    footer: footer
   },
   data () {
     return {
