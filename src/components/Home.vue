@@ -40,7 +40,7 @@
 				</div>
 				<div class="mainCont">
 					<el-row>
-						<el-col :span="5" v-for="(o, index) in 2" :key="o" :offset="index > 0 ? 1 : 0">
+						<el-col :span="5" v-for="(o, index) in 10" :key="o" :offset="index > 0 ? 1 : 0">
 							<el-card>
 								<img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png" class="image">
 								<div class="title">
