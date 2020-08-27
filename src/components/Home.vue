@@ -30,7 +30,14 @@
 		</div>
 		<div class="rowDiv">
 			<div id="mainDiv">
-				<div>Aside</div>
+				<div class="crumbs">
+					<el-breadcrumb separator-class="el-icon-arrow-right">
+						<el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
+						<el-breadcrumb-item>活动管理</el-breadcrumb-item>
+						<el-breadcrumb-item>活动列表</el-breadcrumb-item>
+						<el-breadcrumb-item>活动详情</el-breadcrumb-item>
+					</el-breadcrumb>
+				</div>
 				<div>Main</div>
 			</div>
 		</div>
@@ -61,5 +68,5 @@ export default {
 </script>
 
 <style>
-
+.crumbs{width:100%;}
 </style>
