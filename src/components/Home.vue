@@ -39,7 +39,7 @@
 </template>
 
 <script>
-import  '../../static/css/main.css'
+import  '../../static/books_css/main.css'
 import footer from '@/components/public/footer'
 export default {
   name: 'Home',
