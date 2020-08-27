@@ -4,10 +4,10 @@ body{margin:0px;padding:0px;}
 .rowDiv{width:80%;margin:0 auto}
 #content{width:100%;}
 #topDiv{width:100%;}
-.header{width:100%;background-color: #232323;min-height:70px;}
+.header{width:100%;background-color: #232323;min-height:50px;}
 .headerMain{width:82%;margin:0 auto}
-.headerLeft{width:50%;height:70px;line-height:70px;font-size:14px;color:#9d9d9d;font-weight:bold;text-align:left;float:left;}
-.headerRight{width:50%;height:70px;line-height:70px;font-size:14px;color:#9d9d9d;font-weight:bold;text-align:right;float:right;}
+.headerLeft{width:50%;height:50px;line-height:50px;font-size:16px;color:#9d9d9d;font-weight:bold;text-align:left;float:left;}
+.headerRight{width:50%;height:50px;line-height:50px;font-size:16px;color:#9d9d9d;font-weight:bold;text-align:right;float:right;}
 .el-menu.el-menu--horizontal{padding:5px 0px;}
 
 #mainDiv{width:100%;height:800px;}
