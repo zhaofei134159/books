@@ -38,7 +38,9 @@
 						<el-breadcrumb-item>活动详情</el-breadcrumb-item>
 					</el-breadcrumb>
 				</div>
-				<div>Main</div>
+				<div class="mainCont">
+					
+				</div>
 			</div>
 		</div>
 		<publicFooter></publicFooter>
@@ -70,4 +72,5 @@ export default {
 <style>
 .crumbs{width:100%;}
 .crumbs div{min-height: 50px;line-height: 50px;font-size: 16px;}
+.mainCont{width:100%;}
 </style>
