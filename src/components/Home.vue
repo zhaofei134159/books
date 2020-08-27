@@ -6,7 +6,7 @@
 					<div class="headerLeft">bookfamily</div>
 					<div class="headerRight">登录</div>
 				</div>
-    			<div class="clear"></div>
+				<div class="clear"></div>
 				<el-menu
 				:default-active="activeIndex2"
 				class="el-menu-demo"
@@ -41,7 +41,7 @@
 		</div>
 		<div id="footerDiv">
 			<div class="widewrapper">
-				© 2015 family 来自 <a href="http://blog.myfeiyou.com/" target="_blank" title="family">family</a> 
+				© 2015 family 来自 <a href="http://blog.myfeiyou.com/" target="_blank" title="family">family</a>
 				<br>
 				<a href="http://www.beian.miit.gov.cn" target="__black">京ICP备16026346号-1</a>
 			</div>
@@ -74,10 +74,10 @@ export default {
 	#content{width:100%;}
 	#topDiv{width:100%;}
 	.header{width:100%;}
-	.headerLeft{width:50%;padding:20px 0px;font-size:18px;text-align:left;float:left;background:red;}
-	.headerRight{width:50%;padding:20px 0px;font-size:18px;text-align:right;float:right;background:yellow;}
+	.headerLeft{width:50%;padding:20px 0px;font-size:20px;font-weight:bold;text-align:left;float:left;background:red;}
+	.headerRight{width:50%;padding:20px 0px;font-size:20px;font-weight:bold;text-align:right;float:right;background:yellow;}
 
 	#mainDiv{width:100%;height:800px;background:blue;}
-	#footerDiv{width:100%;height:200px;background:green;}
-	#footerDiv .widewrapper{color: #7b8690;-top: 15px;padding-bottom: 15px;text-align: center;background-color: #232323;}
+	#footerDiv{width:100%;background:green;}
+	#footerDiv .widewrapper{color: #7b8690;font-size:20px;padding-top: 15px;padding-bottom: 15px;text-align: center;background-color: #232323;}
 </style>
