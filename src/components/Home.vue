@@ -39,6 +39,7 @@
 </template>
 
 <script>
+import  'static/css/main.css'
 import footer from '@/components/public/footer'
 export default {
   name: 'Home',
@@ -60,5 +61,5 @@ export default {
 </script>
 
 <style>
-  @import  'static/css/main.css';
+
 </style>
