@@ -69,4 +69,5 @@ export default {
 
 <style>
 .crumbs{width:100%;}
+.crumbs div{min-height: 50px;line-height: 50px;font-size: 16px;}
 </style>
