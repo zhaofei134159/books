@@ -20,6 +20,6 @@ module.exports = {
     image: 'xlink:href'
   },
   postcss:[
-    require('postcss-px2rem')({'remUnit':50,'baseDpr':2})
+    require('postcss-px2rem')({'remUnit':45,'baseDpr':2})
   ]
 }
