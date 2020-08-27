@@ -3,7 +3,7 @@
 		<div class="rowDiv">
 			<div id="topDiv">
 				<div class="header">
-					<div class="headerLeft">bookfamily</div>
+					<div class="headerLeft">booksfamily</div>
 					<div class="headerRight">登录</div>
 				</div>
 				<div class="clear"></div>
@@ -74,10 +74,10 @@ export default {
 	#content{width:100%;}
 	#topDiv{width:100%;}
 	.header{width:100%;}
-	.headerLeft{width:50%;padding:20px 0px;font-size:20px;font-weight:bold;text-align:left;float:left;background:red;}
-	.headerRight{width:50%;padding:20px 0px;font-size:20px;font-weight:bold;text-align:right;float:right;background:yellow;}
+	.headerLeft{width:50%;padding:20px 0px;font-size:20px;font-weight:bold;text-align:left;float:left;}
+	.headerRight{width:50%;padding:20px 0px;font-size:20px;font-weight:bold;text-align:right;float:right;}
 
 	#mainDiv{width:100%;height:800px;background:blue;}
 	#footerDiv{width:100%;background:green;}
-	#footerDiv .widewrapper{color: #7b8690;font-size:20px;padding-top: 15px;padding-bottom: 15px;text-align: center;background-color: #232323;}
+	#footerDiv .widewrapper{color: #68848F;font-size:20px;padding-top: 15px;padding-bottom: 15px;text-align: center;background-color: #232323;}
 </style>
