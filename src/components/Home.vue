@@ -40,7 +40,7 @@
 
 <script>
 import '../../static/books_css/main.css'
-import publicFooter from '@/components/public/footer'
+import publicFooter from '@/components/public/publicFooter'
 export default {
   name: 'Home',
   components: {
