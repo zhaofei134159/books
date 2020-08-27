@@ -44,7 +44,7 @@ import footer from './components/public/footer'
 export default {
   name: 'Home',
   components: {
-    footer: footer
+    footer
   },
   data () {
     return {
