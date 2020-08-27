@@ -43,7 +43,7 @@
 						<el-col :span="8" v-for="(o, index) in 2" :key="o" :offset="index > 0 ? 2 : 0">
 							<el-card :body-style="{ padding: '0px' }">
 								<img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png" class="image">
-								<div>
+								<div class="title">
 									<span>好吃的汉堡</span>
 									<div class="bottom clearfix">
 										<time class="time">{{ currentDate }}</time>
@@ -87,6 +87,7 @@ export default {
 .crumbs{width:100%;}
 .crumbs div{min-height: 50px;line-height: 50px;font-size: 14px;}
 .mainCont{width:100%;}
+.title{padding: 14px}
 
 .time {font-size: 13px;color: #999;}
 .bottom {margin-top: 13px;line-height: 12px;}
