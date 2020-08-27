@@ -70,11 +70,11 @@ export default {
 	#topDiv{width:100%;}
 	.header{width:100%;background-color: #232323;min-height:50px;}
 	.headerMain{width:82%;margin:0 auto}
-	.headerLeft{width:50%;padding:20px 0px;font-size:20px;color:#9d9d9d;font-weight:bold;text-align:left;float:left;}
-	.headerRight{width:50%;padding:20px 0px;font-size:20px;color:#9d9d9d;font-weight:bold;text-align:right;float:right;}
+	.headerLeft{width:50%;height:50px;line-height:50px;font-size:17px;color:#9d9d9d;font-weight:bold;text-align:left;float:left;}
+	.headerRight{width:50%;height:50px;line-height:50px;font-size:17px;color:#9d9d9d;font-weight:bold;text-align:right;float:right;}
 	.el-menu.el-menu--horizontal{padding:5px 0px;}
 
 	#mainDiv{width:100%;height:800px;}
 	#footerDiv{width:100%;background:green;}
-	#footerDiv .widewrapper{color: #68848F;font-size:20px;padding-top: 15px;padding-bottom: 15px;text-align: center;background-color: #232323;}
+	#footerDiv .widewrapper{color: #68848F;font-size:16px;height:70px;line-height:70px;text-align: center;background-color: #232323;}
 </style>
