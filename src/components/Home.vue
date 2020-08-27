@@ -44,7 +44,7 @@ export default {
   name: 'Home',
   components:{
   	footer:footer
-  }
+  },
   data () {
     return {
       activeIndex: '1',
