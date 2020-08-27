@@ -22,11 +22,10 @@ exports.cssLoaders = function (options) {
     }
   }
 
-  // 增加 px 转rem
-  const px2remLoader = {
-    loader: 'px2rem-loader',
+  const postcssLoader = {
+    loader: 'postcss-loader',
     options: {
-      remUnit: 75
+      sourceMap: options.sourceMap
     }
   }
 
