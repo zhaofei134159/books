@@ -38,9 +38,7 @@
 						<el-breadcrumb-item>活动详情</el-breadcrumb-item>
 					</el-breadcrumb>
 				</div>
-				<div class="mainCont">
-					
-				</div>
+				<div class="mainCont"></div>
 			</div>
 		</div>
 		<publicFooter></publicFooter>
