@@ -1,11 +1,12 @@
 <template>
 	<div id="bodyDiv">
+		<div class="header">
+			<div class="headerMain">
+				<div class="headerLeft">booksfamily</div>
+			</div>
+		</div>
 		<div class="rowDiv">
 			<div id="topDiv">
-				<div class="header">
-					<div class="headerLeft">booksfamily</div>
-					<div class="headerRight">登录</div>
-				</div>
 				<div class="clear"></div>
 				<el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
 					<el-menu-item index="1">处理中心</el-menu-item>
@@ -92,10 +93,12 @@ export default {
 	#content{width:100%;}
 	#topDiv{width:100%;}
 	.header{width:100%;}
+	.headerMain{width:82%;margin:0 auto}
 	.headerLeft{width:50%;padding:20px 0px;font-size:20px;font-weight:bold;text-align:left;float:left;}
 	.headerRight{width:50%;padding:20px 0px;font-size:20px;font-weight:bold;text-align:right;float:right;}
+	.el-menu.el-menu--horizontal{border:none;}
 
-	#mainDiv{width:100%;height:800px;background:blue;}
+	#mainDiv{width:100%;height:800px;}
 	#footerDiv{width:100%;background:green;}
 	#footerDiv .widewrapper{color: #68848F;font-size:20px;padding-top: 15px;padding-bottom: 15px;text-align: center;background-color: #232323;}
 </style>
