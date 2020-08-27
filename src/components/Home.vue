@@ -1,11 +1,12 @@
 <template>
 	<div id="bodyDiv">
-		<div id="containerDiv">
+		<div class="rowDiv">
 			<div id="topDiv">
 				<div class="header">
 					<div class="headerLeft">bookfamily</div>
 					<div class="headerRight">登录</div>
 				</div>
+    			<div class="clear"></div>
 				<el-menu
 				:default-active="activeIndex2"
 				class="el-menu-demo"
@@ -31,6 +32,8 @@
 					<el-menu-item index="4"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
 				</el-menu>
 			</div>
+		</div>
+		<div class="rowDiv">
 			<div id="mainDiv">
 				<div>Aside</div>
 				<div>Main</div>
@@ -65,8 +68,9 @@ export default {
 
 <style>
 	body{margin:0px;padding:0px;}
+	.clear{clear: both;}
 	#bodyDiv{width:100%;}
-	#containerDiv{width:75%;margin:0 auto}
+	.rowDiv{width:80%;margin:0 auto}
 	#content{width:100%;}
 	#topDiv{width:100%;}
 	.header{width:100%;}
