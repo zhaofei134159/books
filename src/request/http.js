@@ -7,11 +7,11 @@ let loadingInstance = null // 这里是loading
 export const Service = axios.create({
   timeout: 70000, // 请求超时时间
   baseURL: ConfigBaseURL,
-  method: 'post',
   withCredentials: true,
-  headers: {
-    'Content-Type': 'application/json;charset=UTF-8'
-  }
+  // method: 'post',
+  // headers: {
+  //   'Content-Type': 'application/json;charset=UTF-8'
+  // }
 })
 
 // 添加请求拦截器
