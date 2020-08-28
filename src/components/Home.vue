@@ -16,7 +16,7 @@
 				</div>
 				<div class="mainCont">
 					<el-row>
-						<el-col :span="5" v-for="(o, index) in 10" :key="o" class="colClass">
+						<el-col v-for="(o, index) in 10" :span="5" :key="o" class="colClass">
 							<el-card>
 								<img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png" class="image">
 								<div class="title">
@@ -29,6 +29,11 @@
 							</el-card>
 						</el-col>
 					</el-row>
+					<el-pagination
+						background
+						layout="prev, pager, next"
+						:total="1000">
+					</el-pagination>
 				</div>
 			</div>
 		</div>
@@ -66,7 +71,7 @@ export default {
 
 <style>
 .crumbs{width:100%;}
-.crumbs div{min-height: 50px;line-height: 50px;font-size: 14px;}
+.crumbs div{min-height: 60px;line-height: 60px;font-size: 14px;}
 .mainCont{width:100%;}
 .title{padding: 14px}
 .title span{font-size:15px;}
