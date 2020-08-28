@@ -18,7 +18,7 @@
 								<img :src="val.src" class="image">
 								<div class="title">
 									<span :card="index">
-										{{ val.name }}  
+										{{ val.name }}
 										<time class="time">{{ val.author }}</time>
 									</span>
 									<div class="bottom clearfix infoDesc">
