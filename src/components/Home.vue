@@ -66,6 +66,7 @@ export default {
       if (res.errorNo === '0') {
         self.cardData = res.success
         self.cardDataNum = res.success.length
+        console.log(self.cardDataNum)
       } else {
         this.$message.error('请求错误, 请重试！')
       }
