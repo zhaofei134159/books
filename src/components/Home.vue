@@ -16,11 +16,11 @@
 				</div>
 				<div class="mainCont">
 					<el-row>
-						<el-col :span="5" v-for="(o, index) in 10" :key="o">
+						<el-col :span="5" v-for="(o, index) in 10" :key="o" :class="colClass">
 							<el-card>
 								<img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png" class="image">
 								<div class="title">
-									<span>好吃的汉堡 {{ index }}</span>
+									<span>好吃的汉堡</span>
 									<div class="bottom clearfix">
 										<time class="time">{{ currentDate }}</time>
 										<el-button type="text" class="button">操作按钮</el-button>
@@ -70,6 +70,7 @@ export default {
 .mainCont{width:100%;}
 .title{padding: 14px}
 .title span{font-size:15px;}
+.colClass{margin: 0px 26px 20px;}
 
 .time {font-size: 13px;color: #999;}
 .bottom {margin-top: 13px;line-height: 12px;}
