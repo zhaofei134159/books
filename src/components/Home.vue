@@ -1,7 +1,7 @@
 <template>
 	<div id="bodyDiv">
 		<publicTop></publicTop>
-		
+
 		<publicNav></publicNav>
 
 		<div class="rowDiv">
@@ -45,8 +45,8 @@ import publicFooter from '@/components/public/publicFooter'
 export default {
   name: 'Home',
   components: {
-  	publicTop,
-  	publicNav,
+    publicTop,
+    publicNav,
     publicFooter
   },
   data () {
