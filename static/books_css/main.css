@@ -13,3 +13,4 @@ body{margin:0px;padding:0px;}
 #mainDiv{width:100%;min-height:100vh;}
 #footerDiv{width:100%;background:green;}
 #footerDiv .widewrapper{color: #68848F;font-size:14px;height:70px;line-height:70px;text-align: center;background-color: #232323;}
+.el-backtop{width:60px;}
