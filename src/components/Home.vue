@@ -15,7 +15,7 @@
 					<el-row>
 						<el-col v-for="(val, index) in cardData" :span="5" :key="o" class="colClass">
 							<el-card>
-								<img :src="https://blog.myfeiyou.com/{{ val.src }}" class="image">
+								<img :src="{{ sourceUrl }}{{ val.src }}" class="image">
 								<div class="title">
 									<span :card="index">{{ val.name }}</span>
 									<div class="bottom clearfix">
@@ -56,6 +56,7 @@ export default {
   },
   data () {
     return {
+      sourceUrl: 'https://blog.myfeiyou.com',
       cardData: {},
     }
   },
