@@ -24,6 +24,7 @@ export function addNewAndroidPlugin(data) {
 
 export function getHomeByBooks() {
   return Service({
-    url: 'https://blog.myfeiyou.com/home/work'
+    url: 'https://blog.myfeiyou.com/home/work',
+    method: 'get'
   })
 }

@@ -8,6 +8,7 @@ export const Service = axios.create({
   timeout: 70000, // 请求超时时间
   baseURL: ConfigBaseURL,
   method: 'post',
+  withCredentials: true,
   headers: {
     'Content-Type': 'application/json;charset=UTF-8'
   }
