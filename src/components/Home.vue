@@ -1,6 +1,8 @@
 <template>
 	<div id="bodyDiv">
 		<publicTop></publicTop>
+		
+		<publicNav></publicNav>
 
 		<div class="rowDiv">
 			<div id="mainDiv">
@@ -30,7 +32,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<publicFooter></publicFooter>
 	</div>
 </template>
@@ -38,11 +40,13 @@
 <script>
 import '../../static/books_css/main.css'
 import publicTop from '@/components/public/publicTop'
+import publicNav from '@/components/public/publicNav'
 import publicFooter from '@/components/public/publicFooter'
 export default {
   name: 'Home',
   components: {
   	publicTop,
+  	publicNav,
     publicFooter
   },
   data () {
