@@ -64,7 +64,7 @@ export default {
     var self = this.data
     getHomeByBooks().then(res => {
       if (res.errorNo === '0') {
-        self.cardData = res.seccuss
+        // self.cardData = res.seccuss
         self.cardDataNum = res.seccuss.length
       } else {
         this.$message.error('请求错误, 请重试！')
