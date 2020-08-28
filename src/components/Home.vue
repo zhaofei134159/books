@@ -61,7 +61,7 @@ export default {
   },
   create: function(){
     getHomeByBooks().then(res=>{
-      console.log(res);
+      console.log(res)
     })
   },
   methods: {
