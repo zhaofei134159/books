@@ -61,7 +61,7 @@ export default {
     }
   },
   created: function() {
-    var self = this.data
+    // var self = this.data
     getHomeByBooks().then(res => {
       if (res.errorNo === '0') {
         // self.cardData = res.seccuss
