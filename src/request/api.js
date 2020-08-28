@@ -1,3 +1,5 @@
+import {Service} from '@/request/http.js'
+
 /*
 例如:
 export function getConfigsByProductId(productId) {
@@ -19,6 +21,7 @@ export function addNewAndroidPlugin(data) {
   })
 }
 */
+
 export function getHomeByBooks() {
   return Service({
     url: 'https://blog.myfeiyou.com/home/work'

@@ -4,7 +4,6 @@ import Vue from 'vue'
 import ElementUI from 'element-ui'
 import App from './App'
 import router from './router'
-import {Service} from '@/request/http.js'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
