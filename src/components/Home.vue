@@ -29,11 +29,13 @@
 							</el-card>
 						</el-col>
 					</el-row>
-					<el-pagination
-						background
-						layout="prev, pager, next"
-						:total="1000">
-					</el-pagination>
+					<div class="pageSize">
+						<el-pagination
+							background
+							layout="prev, pager, next"
+							:total="1000">
+						</el-pagination>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -76,6 +78,7 @@ export default {
 .title{padding: 14px}
 .title span{font-size:15px;}
 .colClass{margin: 0px 26px 20px;}
+.pageSize{height:70px;line-height:70px;text-align:right;}
 
 .time {font-size: 13px;color: #999;}
 .bottom {margin-top: 13px;line-height: 12px;}
