@@ -13,7 +13,7 @@
 				</div>
 				<div class="mainCont">
 					<el-row>
-						<el-col v-for="(val, index) in cardData" :span="5" :key="o" class="colClass">
+						<el-col v-for="(val, index) in cardData" :span="5" :key="val" class="colClass">
 							<el-card>
 								<img :src="val.src" class="image">
 								<div class="title">
@@ -57,7 +57,7 @@ export default {
   data () {
     return {
       sourceUrl: 'https://blog.myfeiyou.com',
-      cardData: {},
+      cardData: {}
     }
   },
   created: function() {
@@ -65,7 +65,7 @@ export default {
     getHomeByBooks().then(res => {
       if (res.errorNo === '0') {
         res.seccuss.forEach((item, index) => {
-          res.seccuss[index].src = self.sourceUrl+'/'+item.src
+          res.seccuss[index].src = self.sourceUrl + '/' + item.src
         })
         self.cardData = res.seccuss
       } else {
