@@ -60,15 +60,6 @@ module.exports = {
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
     assetsPublicPath: '',
-    proxyTable: {
-      '/api': {
-        target:'https://blog.myfeiyou.com/home',
-        changeOrigin:true,
-        pathRewrite:{
-          '^/api': ''
-        }
-      }
-    },
 
     /**
      * Source Maps
