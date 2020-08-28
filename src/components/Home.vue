@@ -21,8 +21,8 @@
 										{{ val.name }}
 										<time class="time">{{ val.author }}</time>
 									</span>
-									<div class="bottom clearfix infoDesc">
-										<p>{{ val.introduce }}</p>
+									<div class="clearfix infoDesc">
+										<span>{{ val.introduce }}</span>
 									</div>
 								</div>
 							</el-card>
@@ -94,7 +94,7 @@ export default {
 .pageSize{height:70px;line-height:70px;text-align:right;}
 .errorAlter{display:none;}
 .infoDesc{height: 30px;overflow: hidden;text-indent: 25px;}
-.infoDesc p{text-indent: 137px;}
+.infoDesc span{text-indent: 137px;}
 
 .time {font-size: 13px;color: #999;}
 .bottom {margin-top: 13px;line-height: 12px;}
