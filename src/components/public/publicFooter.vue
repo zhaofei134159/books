@@ -7,13 +7,14 @@
 		<el-backtop>
 			<div
 				style="{
-				height: 100%;
-				width: 100%;
+				height: 60px;
+				width: 60px;
 				background-color: #f2f5f6;
 				box-shadow: 0 0 6px rgba(0,0,0, .12);
 				text-align: center;
-				line-height: 40px;
+				line-height: 60px;
 				color: #1989fa;
+				font-size: 30px;
 				}"
 			>
 				<i class="el-icon-arrow-up"></i>
