@@ -5,7 +5,7 @@ let loadingInstance = null // 这里是loading
 
 // 使用create方法创建axios实例
 export const Service = axios.create({
-  timeout: 7000, // 请求超时时间
+  timeout: 70000, // 请求超时时间
   baseURL: ConfigBaseURL,
   method: 'post',
   headers: {
