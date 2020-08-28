@@ -32,7 +32,7 @@
 						<el-pagination
 							background
 							layout="prev, pager, next"
-							:total="1000">
+							:total="totalCount">
 						</el-pagination>
 					</div>
 				</div>
@@ -59,6 +59,7 @@ export default {
   data () {
     return {
       sourceUrl: 'https://blog.myfeiyou.com',
+      totalCount: 0,
       cardData: {}
     }
   },
@@ -66,10 +67,12 @@ export default {
     var self = this
     getHomeByBooks().then(res => {
       if (res.errorNo === '0') {
-        res.seccuss.forEach((item, index) => {
-          res.seccuss[index].src = self.sourceUrl + '/' + item.src
+      	self.totalCount = res.seccuss.worksCount
+      	
+        res.seccuss.works.forEach((item, index) => {
+          res.seccuss.works[index].src = self.sourceUrl + '/' + item.src
         })
-        self.cardData = res.seccuss
+        self.cardData = res.seccuss.works
       } else {
         this.$message.error('请求错误, 请重试！')
       }
