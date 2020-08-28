@@ -67,8 +67,8 @@ export default {
     var self = this
     getHomeByBooks().then(res => {
       if (res.errorNo === '0') {
-      	self.totalCount = res.seccuss.worksCount
-      	
+        self.totalCount = res.seccuss.worksCount
+
         res.seccuss.works.forEach((item, index) => {
           res.seccuss.works[index].src = self.sourceUrl + '/' + item.src
         })
