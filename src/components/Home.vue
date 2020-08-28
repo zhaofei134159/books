@@ -61,12 +61,11 @@ export default {
     }
   },
   created: function() {
-    var self = this.data
     getHomeByBooks().then(res => {
       if (res.errorNo === '0') {
-        self.cardData = res.success
-        self.cardDataNum = res.success.length
-        console.log(self.cardDataNum)
+        this.data.cardData = res.success
+        this.data.cardDataNum = res.success.length
+        console.log(this.data.cardDataNum)
       } else {
         this.$message.error('请求错误, 请重试！')
       }
