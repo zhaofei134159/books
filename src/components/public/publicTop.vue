@@ -1,7 +1,7 @@
 <template>
 	<div class="header">
 		<div class="headerMain">
-			<div class="headerLeft">booksfamily</div>
+			<div class="headerLeft" :to="{ path: '/' }">booksfamily</div>
 			<div class="headerRight"></div>
 		</div>
 	</div>
