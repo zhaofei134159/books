@@ -59,8 +59,8 @@ export default {
       currentDate: new Date()
     }
   },
-  create: function(){
-    getHomeByBooks().then(res=>{
+  create: function() {
+    getHomeByBooks().then( res=> {
       console.log(res)
     })
   },
