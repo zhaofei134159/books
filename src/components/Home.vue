@@ -13,7 +13,7 @@
 				</div>
 				<div class="mainCont">
 					<el-row>
-						<el-col v-for="(o, index) in 10" :span="5" :key="o" class="colClass">
+						<el-col v-for="(o, index) in cardDataNum" :span="5" :key="o" class="colClass">
 							<el-card>
 								<img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png" class="image">
 								<div class="title">
@@ -56,12 +56,19 @@ export default {
   },
   data () {
     return {
-      currentDate: new Date()
+      cardData:{},
+      cardDataNum:{},
     }
   },
   created: function() {
+  	var self = this.data;
     getHomeByBooks().then(res => {
-      console.log(res)
+    	if(res.errorNo=='0'){
+    		self.cardData = res.success;
+    		self.cardDataNum = res.success.length;
+    	}else{
+			this.$message.error('请求错误,请重试！');
+    	}
     })
   },
   methods: {
@@ -80,6 +87,7 @@ export default {
 .title span{font-size:15px;}
 .colClass{margin: 0px 26px 20px;}
 .pageSize{height:70px;line-height:70px;text-align:right;}
+.errorAlter{display:none;}
 
 .time {font-size: 13px;color: #999;}
 .bottom {margin-top: 13px;line-height: 12px;}
