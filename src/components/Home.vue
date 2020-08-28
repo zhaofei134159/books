@@ -13,7 +13,7 @@
 				</div>
 				<div class="mainCont">
 					<el-row>
-						<el-col v-for="(val, index) in cardData" :span="5" :key="val" class="colClass">
+						<el-col v-for="(val, index) in cardData" :span="5" class="colClass">
 							<el-card>
 								<img :src="val.src" class="image">
 								<div class="title">
@@ -73,7 +73,6 @@ export default {
       } else {
         this.$message.error('请求错误, 请重试！')
       }
-      this.$message.error('请求错误, 请重试！')
     })
   },
   methods: {
