@@ -28,6 +28,8 @@ export default {
   name: 'publicNav',
   data() {
     return {
+      activeIndex: '1',
+      activeIndex2: '1'
     }
   }
 }
