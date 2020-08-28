@@ -70,6 +70,7 @@ export default {
       } else {
         this.$message.error('请求错误, 请重试！')
       }
+      this.$message.error('请求错误, 请重试！')
     })
   },
   methods: {
