@@ -64,9 +64,9 @@ export default {
     var self = this
     getHomeByBooks().then(res => {
       if (res.errorNo === '0') {
-        for (let index,item in res.seccuss) {
+        res.seccuss.forEach((item, index) => {
           res.seccuss[index].src = self.sourceUrl+'/'+item.src
-        }
+        })
         self.cardData = res.seccuss
       } else {
         this.$message.error('请求错误, 请重试！')
