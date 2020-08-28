@@ -13,13 +13,13 @@
 				</div>
 				<div class="mainCont">
 					<el-row>
-						<el-col v-for="(o, index) in cardDataNum" :span="5" :key="o" class="colClass">
+						<el-col v-for="(val, index) in cardData" :span="5" :key="o" class="colClass">
 							<el-card>
-								<img src="https://blog.myfeiyou.com/{{ cardData[index].src }}" class="image">
+								<img src="https://blog.myfeiyou.com/{{ val.src }}" class="image">
 								<div class="title">
-									<span :card="index">{{ cardData[index].name }}</span>
+									<span :card="index">{{ val.name }}</span>
 									<div class="bottom clearfix">
-										<time class="time">{{ cardData[index].author }}</time>
+										<time class="time">{{ val.author }}</time>
 										<el-button type="text" class="button">操作按钮</el-button>
 									</div>
 								</div>
@@ -57,7 +57,6 @@ export default {
   data () {
     return {
       cardData: {},
-      cardDataNum: 0
     }
   },
   created: function() {
@@ -65,7 +64,6 @@ export default {
     getHomeByBooks().then(res => {
       if (res.errorNo === '0') {
         self.cardData = res.seccuss
-        self.cardDataNum = res.seccuss.length
       } else {
         this.$message.error('请求错误, 请重试！')
       }
