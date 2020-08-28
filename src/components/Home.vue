@@ -15,11 +15,11 @@
 					<el-row>
 						<el-col v-for="(o, index) in cardDataNum" :span="5" :key="o" class="colClass">
 							<el-card>
-								<img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png" class="image">
+								<img src="https://blog.myfeiyou.com/{{ cardData[index].src }}" class="image">
 								<div class="title">
-									<span :card="index">好吃的汉堡</span>
+									<span :card="index">{{ cardData[index].name }}</span>
 									<div class="bottom clearfix">
-										<time class="time">{{ currentDate }}</time>
+										<time class="time">{{ cardData[index].author }}</time>
 										<el-button type="text" class="button">操作按钮</el-button>
 									</div>
 								</div>
@@ -64,7 +64,7 @@ export default {
     var self = this
     getHomeByBooks().then(res => {
       if (res.errorNo === '0') {
-        // self.cardData = res.seccuss
+        self.cardData = res.seccuss
         self.cardDataNum = res.seccuss.length
       } else {
         this.$message.error('请求错误, 请重试！')
