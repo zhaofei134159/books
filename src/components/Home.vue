@@ -64,6 +64,7 @@ export default {
     getHomeByBooks().then(res => {
       if (res.errorNo === '0') {
         // this.data.cardData = res.success
+        console.log(res.success)
         this.data.cardDataNum = res.success.length
         console.log(this.data.cardDataNum)
       } else {
