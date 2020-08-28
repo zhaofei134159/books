@@ -57,18 +57,18 @@ export default {
   data () {
     return {
       cardData:{},
-      cardDataNum:{},
+      cardDataNum:0
     }
   },
   created: function() {
-  	var self = this.data;
+    var self = this.data;
     getHomeByBooks().then(res => {
-    	if(res.errorNo=='0'){
-    		self.cardData = res.success;
-    		self.cardDataNum = res.success.length;
-    	}else{
-			this.$message.error('请求错误,请重试！');
-    	}
+      if(res.errorNo=='0'){
+        self.cardData = res.success;
+        self.cardDataNum = res.success.length;
+      }else{
+        this.$message.error('请求错误,请重试！');
+      }
     })
   },
   methods: {
