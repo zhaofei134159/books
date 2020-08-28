@@ -60,7 +60,8 @@ export default {
     }
   },
   create:{
-    getHomeByBooks() .then(res=>{
+    getHomeByBooks()
+    .then(res=>{
       console.log(res);
     })
   },
