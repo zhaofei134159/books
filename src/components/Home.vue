@@ -56,14 +56,14 @@ export default {
   },
   data () {
     return {
-      cardData: {},
+      // cardData: {},
       cardDataNum: 0
     }
   },
   created: function() {
     getHomeByBooks().then(res => {
       if (res.errorNo === '0') {
-        this.data.cardData = res.success
+        // this.data.cardData = res.success
         this.data.cardDataNum = res.success.length
         console.log(this.data.cardDataNum)
       } else {
