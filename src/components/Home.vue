@@ -19,9 +19,9 @@
 								<div class="title">
 									<span :card="index">
 										{{ val.name }}
-										<time class="time">{{ val.author }}</time>
+										<time class="showDesc">{{ val.author }}</time>
 									</span>
-									<div class="clearfix infoDesc">
+									<div class="clearfix infoDesc showDesc">
 										<div>{{ val.introduce }}</div>
 									</div>
 								</div>
@@ -93,8 +93,9 @@ export default {
 .colClass{margin: 0px 26px 20px;}
 .pageSize{height:70px;line-height:70px;text-align:right;}
 .errorAlter{display:none;}
-.infoDesc{height: 30px;overflow: hidden;}
-.infoDesc div{text-indent: 25px;margin-top:5px;}
+.showDesc{font-size: 13px;color: #999;}
+.infoDesc{height: 60px;overflow: hidden;}
+.infoDesc div{text-indent: 25px;margin-top:10px;}
 
 .time {font-size: 13px;color: #999;}
 .bottom {margin-top: 13px;line-height: 12px;}
