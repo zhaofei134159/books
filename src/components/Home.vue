@@ -17,10 +17,12 @@
 							<el-card>
 								<img :src="val.src" class="image">
 								<div class="title">
-									<span :card="index">{{ val.name }}</span>
-									<div class="bottom clearfix">
+									<span :card="index">
+										{{ val.name }}  
 										<time class="time">{{ val.author }}</time>
-										<el-button type="text" class="button">操作按钮</el-button>
+									</span>
+									<div class="bottom clearfix infoDesc">
+										<p>{{ val.introduce }}</p>
 									</div>
 								</div>
 							</el-card>
@@ -91,6 +93,8 @@ export default {
 .colClass{margin: 0px 26px 20px;}
 .pageSize{height:70px;line-height:70px;text-align:right;}
 .errorAlter{display:none;}
+.infoDesc{height: 30px;overflow: hidden;text-indent: 25px;}
+.infoDesc p{text-indent: 137px;}
 
 .time {font-size: 13px;color: #999;}
 .bottom {margin-top: 13px;line-height: 12px;}
