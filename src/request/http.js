@@ -7,7 +7,7 @@ let loadingInstance = null // 这里是loading
 export const Service = axios.create({
   timeout: 70000, // 请求超时时间
   baseURL: ConfigBaseURL,
-  withCredentials: true,
+  withCredentials: true
   // method: 'post',
   // headers: {
   //   'Content-Type': 'application/json;charset=UTF-8'
