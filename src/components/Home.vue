@@ -60,9 +60,9 @@ export default {
     }
   },
   create:{
-	getHomeByBooks().then(res=>{
-		console.log(res);
-	})
+    getHomeByBooks().then(res=>{
+      console.log(res);
+    })
   },
   methods: {
     prev() {},
