@@ -9,10 +9,15 @@
 				<div class="crumbs">
 					<el-breadcrumb separator-class="el-icon-arrow-right">
 						<el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
-						<el-breadcrumb-item :to="{ path: 'chapter/chapterList' }">章节</el-breadcrumb-item>
+						<el-breadcrumb-item>章节</el-breadcrumb-item>
 					</el-breadcrumb>
 				</div>
-				<div class="mainCont"></div>
+				<div class="mainCont">
+					<div class="titleCont">
+						<div></div>
+					</div>
+					<div class="chapterCont"></div>
+				</div>
 			</div>
 		</div>
 
@@ -39,14 +44,13 @@ export default {
       cardData: {}
     }
   },
-  created: function() {},
-  methods: {
-    prev() {},
-    pager() {},
-    next() {}
-  }
+  created: function(workId) {
+    console.log(workId)
+  },
+  methods: {}
 }
 </script>
 
 <style>
+.titleCont{width:100%;}
 </style>
