@@ -47,7 +47,7 @@ export default {
   },
   props: {
     workId: {
-        type: String
+      type: String
     }
   },
   mounted: function() {
