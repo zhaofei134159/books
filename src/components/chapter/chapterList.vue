@@ -14,7 +14,7 @@
 				</div>
 				<div class="mainCont">
 					<div class="titleCont">
-						<div></div>
+						<div class="title"></div>
 					</div>
 					<div class="chapterCont"></div>
 				</div>
@@ -47,9 +47,12 @@ export default {
   },
   created: function() {
     this.workId = this.$route.params.workId
-    console.log(this.workId)
+    this.getWorkchapterList(this.workId)
   },
-  methods: {}
+  methods: {
+    getWorkchapterList(val) {
+    }
+  }
 }
 </script>
 

@@ -16,7 +16,10 @@ export default new Router({
     {
       path: '/chapter/chapterList/:workId',
       name: 'chapterLis',
-      component: chapterLis
+      component: chapterLis,
+      beforeEnter: (to, from, next) => {
+        next()
+      }
     }
   ]
 })
