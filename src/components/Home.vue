@@ -70,7 +70,7 @@ export default {
     }
   },
   created: function() {
-    this.handleCurrentChange(1);
+    this.handleCurrentChange(1)
   },
   methods: {
     handleCurrentChange(val) {
