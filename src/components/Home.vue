@@ -79,6 +79,7 @@ export default {
           res.seccuss.works[index].src = self.sourceUrl + '/' + item.src
         })
         self.cardData = res.seccuss.works
+        console.log(self.cardData);
       } else {
         this.$message.error('请求错误, 请重试！')
       }
