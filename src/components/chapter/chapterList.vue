@@ -47,7 +47,7 @@ export default {
   props: {
     workId: {
       type: String,
-      default: '6',
+      default: '',
       required: true
     }
   },
