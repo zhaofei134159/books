@@ -15,14 +15,14 @@
 					<el-row>
 						<el-col v-for="(val, index) in cardData" :span="5" :key="index" class="colClass">
 							<el-card class="cardDataClass">
-								<img :src="val.src" class="image">
+								<el-link :underline="false"> <img :src="val.src" class="image"> </el-link>
 								<div class="title">
-									<span :card="index">
+									<el-link :underline="false" :card="index">
 										{{ val.name }}
 										<time class="showDesc">{{ val.author }}</time>
-									</span>
+									</el-link>
 									<div class="clearfix infoDesc showDesc">
-										<div>{{ val.introduce }}</div>
+										<el-link :underline="false">{{ val.introduce }}</el-link>
 									</div>
 								</div>
 							</el-card>
@@ -94,7 +94,7 @@ export default {
 .title span{font-size:15px;}
 .colClass{margin: 0px 1.5% 1%;}
 .cardDataClass{height:265px;}
-.pageSize{height:70px;line-height:70px;text-align:right;}
+.pageSize{padding:20px 0px;text-align:right;}
 .errorAlter{display:none;}
 .showDesc{font-size: 13px;color: #999;}
 .infoDesc{height: 60px;overflow: hidden;}
