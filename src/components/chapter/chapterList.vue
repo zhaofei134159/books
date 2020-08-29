@@ -40,7 +40,6 @@ export default {
   data () {
     return {
       sourceUrl: 'https://blog.myfeiyou.com',
-      workId: 0,
       totalCount: 0,
       cardData: {}
     }
