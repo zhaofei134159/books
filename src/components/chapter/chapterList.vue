@@ -46,7 +46,9 @@ export default {
   },
   props: {
     workId: {
-      type: String
+      type: String,
+      default: 6,
+      required: true
     }
   },
   mounted: function() {
