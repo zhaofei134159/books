@@ -15,15 +15,15 @@
 					<el-row>
 						<el-col v-for="(val, index) in cardData" :span="5" :key="index" class="colClass">
 							<el-card class="cardDataClass">
-								<el-link :underline="false"> <img :src="val.src" class="image"> </el-link>
+								<router-link tag="div" :to="{ path: 'chapter/chapterList'}"> <img :src="val.src" class="image"> </router-link>
 								<div class="title">
-									<el-link :underline="false" :card="index">
+									<router-link  tag="div" :to="{ path: 'chapter/chapterList'}" :card="index">
 										{{ val.name }}
 										<time class="showDesc">{{ val.author }}</time>
-									</el-link>
-									<el-link :underline="false" class="clearfix infoDesc showDesc">
-										<div>{{ val.introduce }}</div>
-									</el-link>
+									</router-link>
+									<div class="clearfix infoDesc showDesc">
+										<router-link tag="div" t:to="{ path: 'chapter/chapterList'}">{{ val.introduce }}</router-link>
+									</div>
 								</div>
 							</el-card>
 						</el-col>
@@ -79,31 +79,18 @@ export default {
     })
   },
   methods: {
-    prev() {},
-    pager() {},
-    next() {}
+    prev() {
+      console.log('prev');
+    },
+    pager() {
+      console.log('pager');
+    },
+    next() {
+      console.log('next');
+    }
   }
 }
 </script>
 
 <style>
-.crumbs{width:100%;}
-.crumbs div{min-height: 60px;line-height: 60px;font-size: 14px;}
-.mainCont{width:100%;}
-.title{padding: 14px}
-.title span{font-size:15px;}
-.colClass{margin: 0px 1.5% 1%;}
-.cardDataClass{height:265px;}
-.pageSize{padding:20px 0px;text-align:right;}
-.errorAlter{display:none;}
-.showDesc{font-size: 13px;color: #999;}
-.infoDesc{height: 60px;overflow: hidden;}
-.infoDesc div{text-indent: 25px;margin-top:10px;}
-
-.time {font-size: 13px;color: #999;}
-.bottom {margin-top: 13px;line-height: 12px;}
-.button {padding: 0;float: right;}
-.image {width: 100%;display: block;}
-.clearfix:before,.clearfix:after {display: table;content: "";}
-.clearfix:after {clear: both}
 </style>
