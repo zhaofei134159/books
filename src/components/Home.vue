@@ -91,7 +91,7 @@ export default {
       })
     },
     linkChapterList(workId) {
-      this.$router.push({name: 'chapterList', params: {workId: workId}})    
+      this.$router.push({name: 'chapterList', params: {workId: workId}})
     }
   }
 }
