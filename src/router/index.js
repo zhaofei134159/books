@@ -13,7 +13,7 @@ export default new Router({
       component: Home
     },
     {
-      path: 'chapter/chapterList',
+      path: '/chapter/chapterList',
       name: 'chapter/chapterLis',
       component: chapterLis
     }
