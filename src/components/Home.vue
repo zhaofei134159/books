@@ -82,13 +82,13 @@ export default {
   },
   methods: {
     prev() {
-      console.log('prev');
+      console.log('prev')
     },
     pager() {
-      console.log('pager');
+      console.log('pager')
     },
     next() {
-      console.log('next');
+      console.log('next')
     }
   }
 }
