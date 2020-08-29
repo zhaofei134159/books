@@ -49,7 +49,7 @@ export default {
     this.workId = this.$route.params.workId
     this.getWorkchapterList(this.workId)
   },
-  created: function(){}
+  created: function(){},
   methods: {
     getWorkchapterList(workId) {
     	console.log(workId)
