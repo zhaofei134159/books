@@ -52,7 +52,7 @@ export default {
   created: function(){},
   methods: {
     getWorkchapterList(workId) {
-    	console.log(workId)
+      console.log(workId)
     }
   }
 }
