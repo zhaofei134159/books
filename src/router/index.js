@@ -16,10 +16,7 @@ export default new Router({
     {
       path: '/chapter/chapterList/:workId',
       name: 'chapterLis',
-      component: chapterLis,
-      beforeEnter: (to, from, next) => {
-        next()
-      }
+      component: resolve => require(['@/components/chapter/chapterLis'], resolve)
     }
   ]
 })
