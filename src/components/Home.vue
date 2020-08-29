@@ -32,8 +32,9 @@
 					</el-row>
 					<div class="pageSize">
 						<el-pagination
+							background
 							:page-size="1"
-							:pager-count="3"
+							:pager-count="7"
 							layout="prev, pager, next"
 							:total="totalCount"
 						>
