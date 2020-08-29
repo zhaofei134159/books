@@ -52,7 +52,7 @@ export default {
     }
   },
   watch: {
-    $route(to, from) {  
+    $route(to, from) {
       if (this.workId) {
         console.log(this.workId)
       }
