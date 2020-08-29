@@ -15,9 +15,9 @@
 					<el-row>
 						<el-col v-for="(val, index) in cardData" :span="5" :key="index" class="colClass">
 							<el-card class="cardDataClass">
-								<router-link tag="div" :to="'/chapter/chapterList' + val.id"> <img :src="val.src" class="image"> </router-link>
+								<router-link tag="div" :to="'/chapter/chapterList/' + val.id"> <img :src="val.src" class="image"> </router-link>
 								<div class="title">
-									<router-link  tag="div" :to="'chapter/chapterList' + val.id" :card="index">
+									<router-link  tag="div" :to="'/chapter/chapterList/' + val.id" :card="index">
 										{{ val.name }}
 										<time class="showDesc">{{ val.author }}</time>
 									</router-link>
