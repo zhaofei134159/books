@@ -12,9 +12,7 @@
 						<el-breadcrumb-item :to="{ path: 'chapter/chapterList' }">章节</el-breadcrumb-item>
 					</el-breadcrumb>
 				</div>
-				<div class="mainCont">
-					
-				</div>
+				<div class="mainCont"></div>
 			</div>
 		</div>
 
@@ -41,9 +39,7 @@ export default {
       cardData: {}
     }
   },
-  created: function() {
-    
-  },
+  created: function() {},
   methods: {
     prev() {},
     pager() {},
