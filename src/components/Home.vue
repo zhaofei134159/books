@@ -86,7 +86,18 @@ export default {
   },
   methods: {
     handleCurrentChange(val) {
-      console.log(val)
+      getHomeByBooks(val).then(res => {
+        if (res.errorNo === '0') {
+          self.totalCount = res.seccuss.worksCount
+
+          res.seccuss.works.forEach((item, index) => {
+            res.seccuss.works[index].src = self.sourceUrl + '/' + item.src
+          })
+          self.cardData = res.seccuss.works
+        } else {
+          this.$message.error('请求错误, 请重试！')
+        }
+      })
     }
   }
 }

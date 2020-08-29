@@ -22,9 +22,10 @@ export function addNewAndroidPlugin(data) {
 }
 */
 
-export function getHomeByBooks() {
+export function getHomeByBooks(page) {
   return Service({
     url: '/api/work',
     method: 'get'
+    params: { page: page }
   })
 }
