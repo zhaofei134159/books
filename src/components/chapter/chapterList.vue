@@ -40,12 +40,14 @@ export default {
   data () {
     return {
       sourceUrl: 'https://blog.myfeiyou.com',
+      workId: 0,
       totalCount: 0,
       cardData: {}
     }
   },
-  created: function(workId) {
-    console.log(workId)
+  created: function() {
+  	this.workId = this.$route.params.workId
+    console.log(this.workId)
   },
   methods: {}
 }
