@@ -93,7 +93,7 @@ export default {
 .title{padding: 14px}
 .title span{font-size:15px;}
 .colClass{margin: 0px 1.5% 1%;}
-.cardDataClass{height:240px;}
+.cardDataClass{height:265px;}
 .pageSize{height:70px;line-height:70px;text-align:right;}
 .errorAlter{display:none;}
 .showDesc{font-size: 13px;color: #999;}
