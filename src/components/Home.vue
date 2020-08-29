@@ -88,6 +88,7 @@ export default {
   methods: {
     handleCurrentChange(val) {
       getHomeByBooks(val).then(res => {
+        console.log(res.errorNo)
         if (res.errorNo === '0') {
           self.totalCount = res.seccuss.worksCount
 
