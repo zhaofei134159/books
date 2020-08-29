@@ -70,24 +70,12 @@ export default {
     }
   },
   created: function() {
-    var self = this
-    getHomeByBooks().then(res => {
-      if (res.errorNo === '0') {
-        self.totalCount = res.seccuss.worksCount
-
-        res.seccuss.works.forEach((item, index) => {
-          res.seccuss.works[index].src = self.sourceUrl + '/' + item.src
-        })
-        self.cardData = res.seccuss.works
-      } else {
-        this.$message.error('请求错误, 请重试！')
-      }
-    })
+    this.handleCurrentChange(1);
   },
   methods: {
     handleCurrentChange(val) {
+      var self = this
       getHomeByBooks(val).then(res => {
-        console.log(res.errorNo)
         if (res.errorNo === '0') {
           self.totalCount = res.seccuss.worksCount
 
