@@ -34,7 +34,7 @@
 						<el-pagination
 							background
 							@current-change="handleCurrentChange"
-							:page-size="1"
+							:page-size="pagesize"
 							:pager-count="7"
 							layout="total, prev, pager, next"
 							:total="totalCount"
@@ -65,6 +65,7 @@ export default {
   data () {
     return {
       sourceUrl: 'https://blog.myfeiyou.com',
+      pagesize: 0,
       totalCount: 0,
       cardData: {}
     }
@@ -78,6 +79,7 @@ export default {
       getHomeByBooks(val).then(res => {
         if (res.errorNo === '0') {
           self.totalCount = res.seccuss.worksCount
+          self.pagesize = res.seccuss.pagesize
 
           res.seccuss.works.forEach((item, index) => {
             res.seccuss.works[index].src = self.sourceUrl + '/' + item.src
