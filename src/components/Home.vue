@@ -22,7 +22,9 @@
 										<time class="showDesc">{{ val.author }}</time>
 									</router-link>
 									<div class="clearfix infoDesc showDesc">
-										<router-link tag="div" t:to="{ path: 'chapter/chapterList'}">{{ val.introduce }}</router-link>
+										<div>
+											<router-link tag="div" t:to="{ path: 'chapter/chapterList'}">{{ val.introduce }}</router-link>
+										</div>
 									</div>
 								</div>
 							</el-card>
