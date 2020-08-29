@@ -33,17 +33,18 @@
 					<div class="pageSize">
 						<el-pagination
 							background
-							:page-size="1"
+							@current-change="handleCurrentChange"
+							:page-size="12"
 							:pager-count="7"
-							layout="prev, pager, next"
+							layout="total, prev, pager, next"
 							:total="totalCount"
 						>
 						</el-pagination>
+						<!-- :hide-on-single-page="true" -->
 					</div>
 				</div>
 			</div>
 		</div>
-
 		<publicFooter></publicFooter>
 	</div>
 </template>
@@ -84,14 +85,8 @@ export default {
     })
   },
   methods: {
-    prev() {
-      console.log('prev')
-    },
-    pager() {
-      console.log('pager')
-    },
-    next() {
-      console.log('next')
+    handleCurrentChange(val) {
+      console.log(val)
     }
   }
 }
