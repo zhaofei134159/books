@@ -15,7 +15,7 @@ export default new Router({
     },
     {
       path: '/chapter/chapterList/:workId',
-      name: '/chapter/chapterList/',
+      name: 'chapterLis',
       component: chapterLis
     }
   ]
