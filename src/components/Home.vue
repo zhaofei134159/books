@@ -18,7 +18,7 @@
 								<router-link tag="div" :to="'/chapter/chapterList/' + val.id"> <img :src="val.src" class="image"> </router-link>
 								<div class="title">
 									<router-link  tag="div" :to="'/chapter/chapterList/' + val.id" :card="index">
-										{{ val.name }}
+										<el-link :underline="false">{{ val.name }}</el-link>
 										<time class="showDesc">{{ val.author }}</time>
 									</router-link>
 									<div class="clearfix infoDesc showDesc">
