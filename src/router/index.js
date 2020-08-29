@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-import chapterLis from '@/components/chapter/chapterList'
+import chapterList from '@/components/chapter/chapterList'
 
 Vue.use(Router)
 
@@ -15,8 +15,8 @@ export default new Router({
     },
     {
       path: '/chapter/chapterList/:workId',
-      name: 'chapterLis',
-      component: resolve => require(['@/components/chapter/chapterLis'], resolve)
+      name: 'chapterList',
+      component: resolve => require(['@/components/chapter/chapterList'], resolve)
     }
   ]
 })
