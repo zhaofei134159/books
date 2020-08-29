@@ -14,7 +14,7 @@
 				<div class="mainCont">
 					<el-row>
 						<el-col v-for="(val, index) in cardData" :span="5" :key="index" class="colClass">
-							<el-card>
+							<el-card class="cardDataClass">
 								<img :src="val.src" class="image">
 								<div class="title">
 									<span :card="index">
@@ -92,7 +92,8 @@ export default {
 .mainCont{width:100%;}
 .title{padding: 14px}
 .title span{font-size:15px;}
-.colClass{margin: 0px 26px 20px;}
+.colClass{margin: 0px 1.5% 1%;}
+.cardDataClass{height:240px;}
 .pageSize{height:70px;line-height:70px;text-align:right;}
 .errorAlter{display:none;}
 .showDesc{font-size: 13px;color: #999;}
