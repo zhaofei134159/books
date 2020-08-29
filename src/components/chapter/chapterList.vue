@@ -45,12 +45,14 @@ export default {
       cardData: {}
     }
   },
-  created: function() {
+  mounted: function() {
     this.workId = this.$route.params.workId
     this.getWorkchapterList(this.workId)
   },
+  created: function(){}
   methods: {
-    getWorkchapterList(val) {
+    getWorkchapterList(workId) {
+    	console.log(workId)
     }
   }
 }
