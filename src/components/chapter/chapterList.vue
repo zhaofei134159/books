@@ -45,8 +45,13 @@ export default {
       cardData: {}
     }
   },
+  props: {
+    workId: {
+        type: String
+    }
+  },
   mounted: function() {
-    this.workId = this.$route.params.workId
+    this.workId = this.workId
     this.getWorkchapterList(this.workId)
   },
   created: function() {},
