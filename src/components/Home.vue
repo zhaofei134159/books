@@ -21,9 +21,9 @@
 										{{ val.name }}
 										<time class="showDesc">{{ val.author }}</time>
 									</el-link>
-									<div class="clearfix infoDesc showDesc">
-										<el-link :underline="false">{{ val.introduce }}</el-link>
-									</div>
+									<el-link :underline="false" class="clearfix infoDesc showDesc">
+										<div>{{ val.introduce }}</div>
+									</el-link>
 								</div>
 							</el-card>
 						</el-col>
