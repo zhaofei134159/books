@@ -46,7 +46,7 @@ export default {
     }
   },
   created: function() {
-  	this.workId = this.$route.params.workId
+    this.workId = this.$route.params.workId
     console.log(this.workId)
   },
   methods: {}
