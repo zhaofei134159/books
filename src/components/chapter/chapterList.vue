@@ -50,7 +50,6 @@ export default {
     }
   },
   mounted: function() {
-    this.workId = this.workId
     this.getWorkchapterList(this.workId)
   },
   created: function() {},
