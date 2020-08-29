@@ -32,9 +32,11 @@
 					</el-row>
 					<div class="pageSize">
 						<el-pagination
-							background
+							:page-size="1"
+							:pager-count="3"
 							layout="prev, pager, next"
-							:total="totalCount">
+							:total="totalCount"
+						>
 						</el-pagination>
 					</div>
 				</div>
@@ -70,7 +72,7 @@ export default {
     getHomeByBooks().then(res => {
       if (res.errorNo === '0') {
         self.totalCount = res.seccuss.worksCount
-        console.log(self.totalCount)
+
         res.seccuss.works.forEach((item, index) => {
           res.seccuss.works[index].src = self.sourceUrl + '/' + item.src
         })
