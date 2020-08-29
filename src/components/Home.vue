@@ -15,12 +15,12 @@
 					<el-row>
 						<el-col v-for="(val, index) in cardData" :span="5" :key="index" class="colClass">
 							<el-card class="cardDataClass">
-								<router-link tag="div" @click="linkChapterList(val.id)"> <img :src="val.src" class="image"> </router-link>
+								<div tag="div" @click="linkChapterList(val.id)"> <img :src="val.src" class="image"> </div>
 								<div class="title">
-									<router-link  tag="div" @click="linkChapterList(val.id)" :card="index">
+									<div  tag="div" @click="linkChapterList(val.id)" :card="index">
 										<el-link :underline="false">{{ val.name }}</el-link>
 										<time class="showDesc">{{ val.author }}</time>
-									</router-link>
+									</div>
 									<div class="clearfix infoDesc showDesc">
 										<div>
 											{{ val.introduce }}
