@@ -51,6 +51,13 @@ export default {
       required: true
     }
   },
+  watch: {
+    $route(to, from) {  
+      if (this.workId) {
+        console.log(this.workId)
+      }
+    }
+  },
   mounted: function() {
     this.getWorkchapterList(this.workId)
   },
