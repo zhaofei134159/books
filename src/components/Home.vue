@@ -34,7 +34,7 @@
 						<el-pagination
 							background
 							@current-change="handleCurrentChange"
-							:page-size="12"
+							:page-size="1"
 							:pager-count="7"
 							layout="total, prev, pager, next"
 							:total="totalCount"
