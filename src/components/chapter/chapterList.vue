@@ -17,13 +17,14 @@
 						<div class="titleInfo">{{ work.name }}  <span>( {{ work.author }} )</span> </div>
 						<div class="descInfo">{{ work.introduce }}</div>
 					</div>
-					<el-divider content-position="left">章节</el-divider>
+					<el-divider content-position="left">章节开始</el-divider>
 					<div class="chapterCont">
 						<div v-for="(val, index) in workInfo" :key="index">
 							<el-link href="https://element.eleme.io" :underline="false" target="_blank">{{ val.title }}</el-link>
 						</div>
 					</div>
 					<div class="clear"></div>
+					<el-divider content-position="right">章节结束</el-divider>
 				</div>
 			</div>
 		</div>
@@ -79,5 +80,5 @@ export default {
 .titleInfo span{font-size:15px; color:#999;}
 .descInfo{text-indent: 27px; font-size: 14px;}
 .chapterCont{width:100%;margin-bottom: 20px;}
-.chapterCont div{width:50%;float:left;text-align:left;padding-left:10px;}
+.chapterCont div{width: 39%;float: left;text-align: left;padding-left: 8%;margin-bottom: 1%;}
 </style>
