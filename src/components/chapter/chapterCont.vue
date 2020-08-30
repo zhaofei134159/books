@@ -13,7 +13,15 @@
 						<el-breadcrumb-item>详情</el-breadcrumb-item>
 					</el-breadcrumb>
 				</div>
-				<div class="mainCont"></div>
+				<div class="mainCont">
+          <div class="chapterTitle">
+            <div>{{ workInfo.title }}</div>
+            <div>《{{ work.name }}》</div>
+          </div>
+          <div class="chapterCont">
+            {{ workInfo.content }}
+          </div>
+        </div>
 			</div>
 		</div>
 		<publicFooter></publicFooter>
