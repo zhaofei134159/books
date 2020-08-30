@@ -19,9 +19,7 @@
             <div class="chapterDesc">《{{ work.name }}》{{ work.author }}/著</div>
           </div>
           <el-divider></el-divider>
-          <div class="chapterCont">
-            {{ workInfo.content }}
-          </div>
+          <div class="chapterCont" v-html="workInfo.content"></div>
         </div>
 			</div>
 		</div>
