@@ -51,7 +51,7 @@ export default {
     }
   },
   created: function() {
-    console.log(this.$route.params.id)
+    console.log(this.$router.params.id)
     this.getWorkchapterList(this.id)
   },
   methods: {
