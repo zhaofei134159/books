@@ -40,6 +40,6 @@ export function getFamouWorkCont(workId, chapterId) {
   return Service({
     url: '/api/work/getFamouWorkCont',
     method: 'get',
-    params: { workId: workId, chapterId: chapterId}
+    params: { workId: workId, chapterId: chapterId }
   })
 }
