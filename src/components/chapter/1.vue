@@ -20,6 +20,7 @@
 				</div>
 			</div>
 		</div>
+
 		<publicFooter></publicFooter>
 	</div>
 </template>
