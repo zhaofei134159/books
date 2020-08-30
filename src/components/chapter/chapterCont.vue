@@ -16,7 +16,7 @@
 				<div class="mainCont">
           <div class="chapterTitle">
             <div class="chapterTitleInfo">{{ workInfo.title }}</div>
-            <div class="chapterDesc">《{{ work.name }}》</div>
+            <div class="chapterDesc">《{{ work.name }}》{{ work.author }}/著</div>
           </div>
           <el-divider></el-divider>
           <div class="chapterCont">
