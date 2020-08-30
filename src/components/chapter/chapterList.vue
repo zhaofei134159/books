@@ -44,7 +44,7 @@ export default {
     }
   },
   props: {
-    id: String,
+    id: String
   },
   created: function() {
     this.getWorkchapterList(this.id)
