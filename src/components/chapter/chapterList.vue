@@ -51,14 +51,8 @@ export default {
       required: true
     }
   },
-  watch: {
-    $route(to, from) {
-      if (this.workId) {
-        console.log(this.workId)
-      }
-    }
-  },
   created: function() {
+    console.log(this.$route.params.workId;)
     this.getWorkchapterList(this.workId)
   },
   methods: {
