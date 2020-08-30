@@ -20,6 +20,7 @@
           </div>
           <el-divider></el-divider>
           <div class="chapterCont" v-html="workInfo.content"></div>
+          <el-divider></el-divider>
         </div>
 			</div>
 		</div>
@@ -76,6 +77,5 @@ export default {
 .chapterTitleInfo{text-align: center;font-size: 20px;font-weight: bold;padding-bottom: 20px;}
 .chapterDesc{font-size: 15px;color: #999;text-align: center;}
 .descInfo{text-indent: 27px; font-size: 14px;}
-.chapterCont{width:100%;margin-bottom: 20px;}
-.chapterCont div{width: 39%;float: left;text-align: left;padding-left: 8%;margin-bottom: 1%;}
+.chapterCont{width:100%;margin-bottom: 20px;font-size: 15px;color: #555;}
 </style>
