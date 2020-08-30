@@ -48,8 +48,9 @@ export default {
   },
   created: function() {
     var articleId = localStorage.getItem('articleId')
-    if(articleId==null){
+    if (articleId == null) {
       this.$message.error('请求错误, 请重试！')
+      return false
     }
     this.getWorkchapterList(articleId)
   },
