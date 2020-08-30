@@ -2,7 +2,7 @@
 	<div class="header">
 		<div class="headerMain">
 			<div class="headerLeft">
-				<el-breadcrumb-item :to="{ path: '/' }">booksfamily</el-breadcrumb-item>
+				<div @click="linkHome()">booksfamily</div>
 			</div>
 			<div class="headerRight"></div>
 		</div>
@@ -14,6 +14,11 @@ export default {
   name: 'publicTop',
   data() {
     return {
+    }
+  },
+  methods: {
+    linkHome() {
+      this.$router.push({name: 'Home'})
     }
   }
 }
