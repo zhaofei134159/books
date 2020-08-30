@@ -45,19 +45,19 @@ export default {
     }
   },
   props: {
-    workId: {
+    workid: {
       type: String,
       default: '',
       required: true
     }
   },
   created: function() {
-    console.log(this.$route.params.workId)
-    this.getWorkchapterList(this.workId)
+    console.log(this.$route.params.workid)
+    this.getWorkchapterList(this.workid)
   },
   methods: {
-    getWorkchapterList(workId) {
-      console.log(workId)
+    getWorkchapterList(workid) {
+      console.log(workid)
     }
   }
 }
