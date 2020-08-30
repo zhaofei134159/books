@@ -20,7 +20,7 @@
 					<el-divider content-position="left">章节开始</el-divider>
 					<div class="chapterCont">
 						<div v-for="(val, index) in workInfo" :key="index">
-							<el-link href="https://element.eleme.io" :underline="false" target="_blank">{{ val.title }}</el-link>
+							<el-link  @click="linkChapterCont(val.id)" :underline="false" target="_blank">{{ val.title }}</el-link>
 						</div>
 					</div>
 					<div class="clear"></div>
@@ -69,6 +69,9 @@ export default {
           this.$message.error('请求错误, 请重试！')
         }
       })
+    },
+    linkChapterCont(chapterid) {
+      this.$router.push({name: 'ChapterCont', params: {workid: this.id,chapterid: chapterid}})
     }
   }
 }
