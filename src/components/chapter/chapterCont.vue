@@ -25,6 +25,7 @@ import '../../../static/books_css/main.css'
 import publicTop from '@/components/public/publicTop'
 import publicNav from '@/components/public/publicNav'
 import publicFooter from '@/components/public/publicFooter'
+import {getFamouWorkCont} from '@/request/api.js'
 export default {
   name: 'ChapterCont',
   components: {
@@ -48,7 +49,15 @@ export default {
   },
   methods: {
     getWorkchapterCont(workid,chapterid) {
-
+      var self = this
+      getFamouWorkCont(workid,chapterid).then(res => {
+        if (res.errorNo === '0') {
+          self.work = res.seccuss.work
+          self.workInfo = res.seccuss.workInfo
+        } else {
+          this.$message.error('请求错误, 请重试！')
+        }
+      })
     }
   }
 }
