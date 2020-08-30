@@ -9,7 +9,7 @@
 				<div class="crumbs">
 					<el-breadcrumb separator-class="el-icon-arrow-right">
 						<el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
-            <el-breadcrumb-item :to="{ path: '/chapter/ChapterList', params: {workid: workid}}">章节</el-breadcrumb-item>
+            <el-breadcrumb-item :to="{ name: 'ChapterList', params: {workid: workid}}">章节</el-breadcrumb-item>
 						<el-breadcrumb-item>详情</el-breadcrumb-item>
 					</el-breadcrumb>
 				</div>
