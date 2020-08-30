@@ -23,6 +23,7 @@
 							<el-link href="https://element.eleme.io" :underline="false" target="_blank">{{ val.title }}</el-link>
 						</div>
 					</div>
+					<div class="clear"></div>
 				</div>
 			</div>
 		</div>
