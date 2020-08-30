@@ -45,12 +45,12 @@ export default {
     chapterid: String
   },
   created: function() {
-    this.getWorkchapterCont(this.workid,this.chapterid)
+    this.getWorkchapterCont(this.workid, this.chapterid)
   },
   methods: {
     getWorkchapterCont(workid,chapterid) {
       var self = this
-      getFamouWorkCont(workid,chapterid).then(res => {
+      getFamouWorkCont(workid, chapterid).then(res => {
         if (res.errorNo === '0') {
           self.work = res.seccuss.work
           self.workInfo = res.seccuss.workInfo

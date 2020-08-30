@@ -36,7 +36,7 @@ export function getFamouWorkInfo(workId) {
     params: { workId: workId }
   })
 }
-export function getFamouWorkCont(workId,chapterId) {
+export function getFamouWorkCont(workId, chapterId) {
   return Service({
     url: '/api/work/getFamouWorkCont',
     method: 'get',
