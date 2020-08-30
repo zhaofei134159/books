@@ -41,7 +41,7 @@ export default {
     }
   },
   props: {
-    workid: String
+    workid: String,
     chapterid: String
   },
   created: function() {
