@@ -74,7 +74,7 @@ export default {
 </script>
 
 <style>
-.chapterTitle{width: 100%;padding: 20px;padding-bottom: none;}
+.chapterTitle{width: 100%;padding-top: 20px;}
 .chapterTitleInfo{text-align: center;font-size: 20px;font-weight: bold;padding-bottom: 20px;}
 .chapterDesc{font-size: 15px;color: #999;text-align: center;}
 .descInfo{text-indent: 27px; font-size: 14px;}
