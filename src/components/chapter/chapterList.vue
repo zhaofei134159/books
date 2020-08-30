@@ -44,14 +44,9 @@ export default {
     }
   },
   props: {
-    id: {
-      type: String,
-      default: '',
-      required: true
-    }
+    id: String,
   },
   created: function() {
-    console.log(this.$router.params.id)
     this.getWorkchapterList(this.id)
   },
   methods: {
