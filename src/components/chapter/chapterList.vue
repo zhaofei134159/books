@@ -58,10 +58,9 @@ export default {
       }
     }
   },
-  mounted: function() {
+  created: function() {
     this.getWorkchapterList(this.workId)
   },
-  created: function() {},
   methods: {
     getWorkchapterList(workId) {
       console.log(workId)
