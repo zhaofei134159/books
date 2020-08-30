@@ -91,7 +91,7 @@ export default {
       })
     },
     linkChapterList(id) {
-      this.$router.push({name: 'chapterList', params: {id: id}})
+      this.$router.push({name: 'ChapterList', params: {id: id}})
     }
   }
 }

@@ -31,7 +31,7 @@ import publicTop from '@/components/public/publicTop'
 import publicNav from '@/components/public/publicNav'
 import publicFooter from '@/components/public/publicFooter'
 export default {
-  name: 'chapterList',
+  name: 'ChapterList',
   components: {
     publicTop,
     publicNav,
