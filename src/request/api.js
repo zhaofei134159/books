@@ -29,3 +29,10 @@ export function getHomeByBooks(page) {
     params: { page: page }
   })
 }
+export function getFamouWorkInfo(workId) {
+  return Service({
+    url: '/api/work/getFamouWorkInfo',
+    method: 'get',
+    params: { workId: workId }
+  })
+}

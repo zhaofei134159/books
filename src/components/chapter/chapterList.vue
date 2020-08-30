@@ -14,7 +14,8 @@
 				</div>
 				<div class="mainCont">
 					<div class="titleCont">
-						<div class="title"></div>
+						<div class="titleInfo">{{ work.name }}</div>
+						<div class="descInfo">{{ work.introduce }}</div>
 					</div>
 					<div class="chapterCont"></div>
 				</div>
@@ -39,8 +40,8 @@ export default {
   data () {
     return {
       sourceUrl: 'https://blog.myfeiyou.com',
-      totalCount: 0,
-      cardData: {}
+      work: {},
+      workInfo: {}
     }
   },
   props: {
@@ -51,7 +52,15 @@ export default {
   },
   methods: {
     getWorkchapterList(id) {
-      console.log(id)
+      var self = this
+      getFamouWorkInfo(id).then(res => {
+        if (res.errorNo === '0') {
+          self.work = res.seccuss.work
+          self.workInfo = res.seccuss.workInfo
+        } else {
+          this.$message.error('请求错误, 请重试！')
+        }
+      })
     }
   }
 }
