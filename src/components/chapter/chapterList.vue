@@ -43,9 +43,6 @@ export default {
       cardData: {}
     }
   },
-  props: {
-    id: String
-  },
   created: function() {
     var articleId = localStorage.getItem('articleId')
     if (articleId == null) {

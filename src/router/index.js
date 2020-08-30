@@ -14,9 +14,8 @@ export default new Router({
       component: Home
     },
     {
-      path: '/chapter/ChapterList/:id',
+      path: '/chapter/ChapterList/',
       name: 'ChapterList',
-      props: true, // 若个要解耦的 到组件中 props 中。
       component: ChapterList
     }
   ]
