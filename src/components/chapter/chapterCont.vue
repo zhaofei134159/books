@@ -15,9 +15,10 @@
 				</div>
 				<div class="mainCont">
           <div class="chapterTitle">
-            <div>{{ workInfo.title }}</div>
-            <div>《{{ work.name }}》</div>
+            <div class="chapterTitleInfo">{{ workInfo.title }}</div>
+            <div class="chapterDesc">《{{ work.name }}》</div>
           </div>
+          <el-divider></el-divider>
           <div class="chapterCont">
             {{ workInfo.content }}
           </div>
@@ -73,9 +74,9 @@ export default {
 </script>
 
 <style>
-.titleCont{width:100%;}
-.titleInfo{font-size: 20px;font-weight: bold;padding: 10px;}
-.titleInfo span{font-size:15px; color:#999;}
+.chapterTitle{width: 100%;padding: 20px;}
+.chapterTitleInfo{text-align: center;font-size: 20px;font-weight: bold;padding-bottom: 20px;}
+.chapterDesc{font-size: 15px;color: #999;text-align: center;}
 .descInfo{text-indent: 27px; font-size: 14px;}
 .chapterCont{width:100%;margin-bottom: 20px;}
 .chapterCont div{width: 39%;float: left;text-align: left;padding-left: 8%;margin-bottom: 1%;}
