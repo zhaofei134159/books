@@ -52,7 +52,7 @@ export default {
     }
   },
   created: function() {
-    console.log(this.$route.params.workId;)
+    console.log(this.$route.params.workId)
     this.getWorkchapterList(this.workId)
   },
   methods: {
