@@ -3,7 +3,9 @@
 		<div id="topDiv">
 			<div class="clear"></div>
 			<el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-				<el-menu-item index="1" :to="{ path: '/' }">首页</el-menu-item>
+				<el-menu-item index="1">
+					<el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
+				</el-menu-item>
 				<!-- <el-submenu index="2">
 				<template slot="title">我的工作台</template>
 					<el-menu-item index="2-1">选项1</el-menu-item>

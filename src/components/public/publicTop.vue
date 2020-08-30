@@ -1,7 +1,9 @@
 <template>
 	<div class="header">
 		<div class="headerMain">
-			<div class="headerLeft" :to="{ path: '/' }">booksfamily</div>
+			<div class="headerLeft">
+				<el-breadcrumb-item :to="{ path: '/' }">booksfamily</el-breadcrumb-item>
+			</div>
 			<div class="headerRight"></div>
 		</div>
 	</div>
