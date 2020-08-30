@@ -32,7 +32,7 @@ export function getHomeByBooks(page) {
 export function getFamouWorkInfo(workId) {
   return Service({
     url: '/api/work/getFamouWorkInfo',
-    method: 'post',
+    method: 'get',
     params: { workId: workId }
   })
 }
