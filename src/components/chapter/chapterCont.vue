@@ -78,5 +78,5 @@ export default {
 .chapterDesc{font-size: 15px;color: #999;text-align: center;}
 .descInfo{text-indent: 27px; font-size: 14px;}
 .chapterCont{width:100%;margin-bottom: 20px;font-size: 15px;color: #555;}
-.chapterCont p{margin-block-start: 0px;margin-block-end: 0px;}
+.chapterCont p{margin-block-start: 0px;margin-block-end: 0px;text-indent: 20px;}
 </style>
