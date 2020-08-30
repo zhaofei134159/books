@@ -47,6 +47,8 @@ export default {
     id: String
   },
   created: function() {
+    var articleId = localStorage.getItem('articleId')
+    console.log(articleId)
     this.getWorkchapterList(this.id)
   },
   methods: {

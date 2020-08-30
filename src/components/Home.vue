@@ -91,7 +91,8 @@ export default {
       })
     },
     linkChapterList(id) {
-      this.$router.push({name: 'ChapterList', params: {id: id}})
+      // localStorage.setItem('articleId',id)
+      this.$router.push({name: 'ChapterList', params:{id: id}})
     }
   }
 }
