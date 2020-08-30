@@ -48,7 +48,7 @@ export default {
     this.getWorkchapterCont(this.workid, this.chapterid)
   },
   methods: {
-    getWorkchapterCont(workid,chapterid) {
+    getWorkchapterCont(workid, chapterid) {
       var self = this
       getFamouWorkCont(workid, chapterid).then(res => {
         if (res.errorNo === '0') {
