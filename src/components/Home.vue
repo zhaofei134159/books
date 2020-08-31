@@ -89,9 +89,9 @@ export default {
           self.pagesize = res.seccuss.pagesize
 
           res.seccuss.works.forEach((item, index) => {
-          	if (item.src !== ''){
+            if (item.src !== '') {
               res.seccuss.works[index].src = self.sourceUrl + '/' + item.src
-          	}
+            }
           })
           self.cardData = res.seccuss.works
         } else {
