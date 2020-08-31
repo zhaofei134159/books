@@ -62,7 +62,6 @@ export default {
         if (res.errorNo === '0') {
           self.work = res.seccuss.work
           self.workInfo = res.seccuss.workInfo
-          console.log(self.workInfo)
         } else {
           this.$message.error('请求错误, 请重试！')
         }
