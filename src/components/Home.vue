@@ -15,7 +15,14 @@
 					<el-row>
 						<el-col v-for="(val, index) in cardData" :span="5" :key="index" class="colClass">
 							<el-card class="cardDataClass">
-								<div tag="div" @click="linkChapterList(val.id)"> <img :src="val.src" class="image"> </div>
+								<div tag="div" @click="linkChapterList(val.id)">
+									<el-image v-if="val.src==='null'">
+										<div slot="error" class="image-slot">
+											<i class="el-icon-picture-outline"></i>
+										</div>
+									</el-image>
+									<img v-else :src="val.src" class="image">
+								</div>
 								<div class="title">
 									<div  tag="div" @click="linkChapterList(val.id)" :card="index">
 										<el-link :underline="false">{{ val.name }}</el-link>
