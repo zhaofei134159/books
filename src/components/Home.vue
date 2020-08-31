@@ -36,11 +36,11 @@
 							@current-change="handleCurrentChange"
 							:page-size="pagesize"
 							:pager-count="7"
+							:hide-on-single-page="true"
 							layout="total, prev, pager, next"
 							:total="totalCount"
 						>
 						</el-pagination>
-						<!-- :hide-on-single-page="true" -->
 					</div>
 				</div>
 			</div>
