@@ -20,7 +20,7 @@
 									<el-image v-else  class="image"></el-image>
 								</div>
 								<div class="title">
-									<div  tag="div" @click="linkChapterList(val.id)" :card="index">
+									<div  tag="div" @click="linkChapterList(val.id)" :card="index" class="overHidden">
 										<el-link :underline="false">{{ val.name }}</el-link>
 										<time class="showDesc">{{ val.author }}</time>
 									</div>
@@ -103,4 +103,5 @@ export default {
 </script>
 
 <style>
+.overHidden{width: 100%; overflow: hidden;height: 20px;}
 </style>
