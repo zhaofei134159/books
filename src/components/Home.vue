@@ -16,7 +16,7 @@
 						<el-col v-for="(val, index) in cardData" :span="5" :key="index" class="colClass">
 							<el-card class="cardDataClass">
 								<div tag="div" @click="linkChapterList(val.id)">
-									<el-image :src="val.src">
+									<el-image :src="val.src" :fit="scale-down">
 										<div slot="error" class="image-slot">
 											<i class="el-icon-picture-outline"></i>
 										</div>
