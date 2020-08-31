@@ -16,7 +16,7 @@
 						<el-col v-for="(val, index) in cardData" :span="5" :key="index" class="colClass">
 							<el-card class="cardDataClass">
 								<div tag="div" @click="linkChapterList(val.id)">
-									<el-image v-if="val.src==='null'">
+									<el-image v-if="val.src===''">
 										<div slot="error" class="image-slot">
 											<i class="el-icon-picture-outline"></i>
 										</div>
@@ -89,7 +89,9 @@ export default {
           self.pagesize = res.seccuss.pagesize
 
           res.seccuss.works.forEach((item, index) => {
-            res.seccuss.works[index].src = self.sourceUrl + '/' + item.src
+          	if (item.src !== ''){
+              res.seccuss.works[index].src = self.sourceUrl + '/' + item.src
+          	}
           })
           self.cardData = res.seccuss.works
         } else {
