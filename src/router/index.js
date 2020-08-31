@@ -25,13 +25,19 @@ export default new Router({
       path: '/chapter/ChapterList/:id',
       name: 'ChapterList',
       props: true, // 若个要解耦的 到组件中 props 中。
-      component: ChapterList
+      component: ChapterList,
+      meta: {
+        title: '章节列表'
+      }
     },
     {
       path: '/chapter/ChapterCont/:workid/:chapterid',
       name: 'ChapterCont',
       props: true, // 若个要解耦的 到组件中 props 中。
-      component: ChapterCont
+      component: ChapterCont,
+      meta: {
+        title: '详情'
+      }
     }
   ]
 })
