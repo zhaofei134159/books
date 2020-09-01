@@ -24,7 +24,7 @@
 
           <el-divider content-position="left" v-if="workNode.node!==''">注释</el-divider>
           <div class="chapterCont"  v-if="workNode.node!==''" v-html="workNode.node"></div>
-          
+
           <el-divider content-position="left" v-if="workNode.translate!==''">译文</el-divider>
           <div class="chapterCont" v-if="worktranslate.node!==''" v-html="workNode.translate"></div>
           <el-divider></el-divider>
