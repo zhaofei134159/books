@@ -103,5 +103,5 @@ export default {
 </script>
 
 <style>
-.overHidden{width: 100%; overflow: hidden;height: 20px;}
+.overHidden{width: 100%; overflow: hidden;height: 25px;}
 </style>
