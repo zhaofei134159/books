@@ -54,8 +54,8 @@ export default {
       work: {},
       workInfo: {},
       workNode: {
-        node: '',
-        translate: ''
+        'node': '',
+        'translate': ''
       }
     }
   },
