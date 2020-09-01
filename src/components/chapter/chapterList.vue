@@ -24,7 +24,7 @@
 						</div>
 					</div>
 					<div class="clear"></div>
-					<el-divider content-position="right">章节结束</el-divider>
+          <el-divider></el-divider>
 				</div>
 			</div>
 		</div>
