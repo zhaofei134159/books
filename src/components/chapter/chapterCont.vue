@@ -18,8 +18,12 @@
             <div class="chapterTitleInfo">{{ workInfo.title }}</div>
             <div class="chapterDesc">《{{ work.name }}》{{ work.author }}/著</div>
           </div>
-          <el-divider></el-divider>
+          <el-divider content-position="left">原文</el-divider>
           <div class="chapterCont" v-html="workInfo.content"></div>
+          <el-divider content-position="left" v-if="workNode.node!==''">注释</el-divider>
+          <div class="chapterCont"  v-if="workNode.node!==''" v-html="workNode.node"></div>
+          <el-divider content-position="left" v-if="workNode.translate!==''">译文</el-divider>
+          <div class="chapterCont" v-if="worktranslate.node!==''" v-html="workNode.translate"></div>
           <el-divider></el-divider>
         </div>
 			</div>
@@ -45,7 +49,8 @@ export default {
     return {
       sourceUrl: 'https://blog.myfeiyou.com',
       work: {},
-      workInfo: {}
+      workInfo: {},
+      workNode: {}
     }
   },
   props: {
@@ -62,6 +67,7 @@ export default {
         if (res.errorNo === '0') {
           self.work = res.seccuss.work
           self.workInfo = res.seccuss.workInfo
+          self.workNode = res.seccuss.workNode
         } else {
           this.$message.error('请求错误, 请重试！')
         }
