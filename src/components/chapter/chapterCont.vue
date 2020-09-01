@@ -18,7 +18,7 @@
             <div class="chapterTitleInfo">{{ workInfo.title }}</div>
             <div class="chapterDesc">《{{ work.name }}》{{ work.author }}/著</div>
           </div>
-          <el-divider v-if="workNode.content!==''" content-position="left">原文</el-divider>
+          <el-divider v-if="workInfo.content!==''" content-position="left">原文</el-divider>
           <el-divider v-else></el-divider>
           <div class="chapterCont" v-html="workInfo.content"></div>
 
@@ -26,7 +26,7 @@
           <div class="chapterCont"  v-if="workNode.node!==''" v-html="workNode.node"></div>
 
           <el-divider content-position="left" v-if="workNode.translate!==''">译文</el-divider>
-          <div class="chapterCont" v-if="worktranslate.node!==''" v-html="workNode.translate"></div>
+          <div class="chapterCont" v-if="worktranslate.translate!==''" v-html="workNode.translate"></div>
           <el-divider></el-divider>
         </div>
 			</div>
