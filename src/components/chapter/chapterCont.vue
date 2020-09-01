@@ -53,7 +53,10 @@ export default {
       sourceUrl: 'https://blog.myfeiyou.com',
       work: {},
       workInfo: {},
-      workNode: {}
+      workNode: {
+        node: '',
+        translate: ''
+      }
     }
   },
   props: {
