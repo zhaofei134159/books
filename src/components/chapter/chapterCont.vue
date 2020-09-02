@@ -24,7 +24,7 @@
 
           <el-divider content-position="left" v-if="workNode.node!==''">注释</el-divider>
           <div class="chapterCont"  v-if="workNode.node!==''" v-html="workNode.node"></div>
-          
+
           <el-divider content-position="left" v-if="workNode.annotate!==''">注解</el-divider>
           <div class="chapterCont"  v-if="workNode.annotate!==''" v-html="workNode.annotate"></div>
 
@@ -59,7 +59,7 @@ export default {
       workNode: {
         'node': '',
         'translate': '',
-        'annotate': '',
+        'annotate': ''
       }
     }
   },
