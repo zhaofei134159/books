@@ -90,4 +90,5 @@ export default {
 .descInfo{text-indent: 27px; font-size: 14px;}
 .chapterCont{width:100%;margin-bottom: 20px;font-size: 15px;color: #555;}
 .chapterCont p{margin-block-start: 0px;margin-block-end: 0px;text-indent: 20px;}
+..el-divider--horizontal{margin:26px 0px;}
 </style>
