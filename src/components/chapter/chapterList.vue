@@ -21,8 +21,9 @@
 					<div class="chapterCont">
 						<div v-for="(val, index) in workInfo" :key="index">
               <el-divider v-if="val.extract!=''&&val.chapterIndex==0" content-position="left">{{ val.extract }}</el-divider>
-
-							<el-link  @click="linkChapterCont(val.id)" :underline="false" target="_blank">{{ val.title }}</el-link>
+              <div class="chapterContLink">
+                <el-link  @click="linkChapterCont(val.id)" :underline="false" target="_blank">{{ val.title }}</el-link>
+              </div>
 						</div>
 					</div>
 					<div class="clear"></div>
@@ -85,5 +86,5 @@ export default {
 .titleInfo span{font-size:15px; color:#999;}
 .descInfo{text-indent: 27px; font-size: 14px;}
 .chapterCont{width:100%;margin-bottom: 20px;}
-.chapterCont div{width: 39%;float: left;text-align: left;padding-left: 8%;margin-bottom: 1%;}
+.chapterCont .chapterContLink{width: 39%;float: left;text-align: left;padding-left: 8%;margin-bottom: 1%;}
 </style>
