@@ -21,6 +21,7 @@
 					<div class="chapterCont">
 						<div v-for="(val, index) in workInfo" :key="index">
               <el-divider v-if="val.extract!=''&&val.chapterIndex==0" content-position="left">{{ val.extract }}</el-divider>
+              <div v-if="val.extract!=''&&val.chapterIndex==0" class="clear"></div>
               <div class="chapterContLink">
                 <el-link  @click="linkChapterCont(val.id)" :underline="false" target="_blank">{{ val.title }}</el-link>
               </div>
