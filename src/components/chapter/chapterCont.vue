@@ -16,7 +16,11 @@
 				<div class="mainCont">
           <div class="chapterTitle">
             <div class="chapterTitleInfo">{{ workInfo.title }}</div>
-            <div class="chapterDesc">《{{ work.name }}》{{ work.author }}/著</div>
+            <div class="chapterDesc">
+              <span>《{{ work.name }}》</span> 
+              <span v-if="work.author!==''">{{ work.author }}/著</span>
+              <span v-if="workTag.id!==''">标签: {{ workTag.name }}</span>
+            </div>
           </div>
           <el-divider v-if="workNode.translate!==''" content-position="left">原文</el-divider>
           <el-divider v-else></el-divider>
@@ -56,6 +60,7 @@ export default {
       sourceUrl: 'https://blog.myfeiyou.com',
       work: {},
       workInfo: {},
+      workTag: {},
       workNode: {
         'node': '',
         'translate': '',
@@ -78,6 +83,7 @@ export default {
           self.work = res.seccuss.work
           self.workInfo = res.seccuss.workInfo
           self.workNode = res.seccuss.workNode
+          self.workTag = res.seccuss.workTag
         } else {
           this.$message.error('请求错误, 请重试！')
         }

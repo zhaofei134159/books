@@ -14,12 +14,14 @@
 				</div>
 				<div class="mainCont">
 					<div class="titleCont">
-						<div class="titleInfo">{{ work.name }}  <span>( {{ work.author }} )</span> </div>
+						<div class="titleInfo">{{ work.name }}  <span v-if="work.author!==''">( {{ work.author }} )</span> </div>
 						<div class="descInfo">{{ work.introduce }}</div>
 					</div>
 					<el-divider content-position="left">章节开始</el-divider>
 					<div class="chapterCont">
 						<div v-for="(val, index) in workInfo" :key="index">
+              <el-divider v-if="val.extract!=''&&val.chapterIndex==0" content-position="left">{{ val.extract }}</el-divider>
+
 							<el-link  @click="linkChapterCont(val.id)" :underline="false" target="_blank">{{ val.title }}</el-link>
 						</div>
 					</div>
