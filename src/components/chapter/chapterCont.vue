@@ -19,7 +19,7 @@
             <div class="chapterDesc">
               <span>《{{ work.name }}》</span>
               <span v-if="work.author!==''">{{ work.author }}/著</span>
-              <span v-if="workTag.id!==''">标签: {{ workTag.name }}</span>
+              <el-tag v-if="workTag.id!==''">{{ workTag.name }}</el-tag>
             </div>
           </div>
           <el-divider v-if="workNode.translate!==''" content-position="left">原文</el-divider>
