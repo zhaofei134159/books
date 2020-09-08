@@ -17,7 +17,7 @@
           <div class="chapterTitle">
             <div class="chapterTitleInfo">{{ workInfo.title }}</div>
             <div class="chapterDesc">
-              <span>《{{ work.name }}》</span> 
+              <span>《{{ work.name }}》</span>
               <span v-if="work.author!==''">{{ work.author }}/著</span>
               <span v-if="workTag.id!==''">标签: {{ workTag.name }}</span>
             </div>
