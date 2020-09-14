@@ -15,6 +15,7 @@
           <div class="mainLeft"></div>
           <div class="mainRight"></div>
           <div class="clear"></div>
+          <el-divider></el-divider>
 				</div>
 			</div>
 		</div>
