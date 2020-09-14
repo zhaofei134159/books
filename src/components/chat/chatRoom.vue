@@ -14,6 +14,7 @@
 				<div class="mainCont">
           <div class="mainLeft"></div>
           <div class="mainRight"></div>
+          <div class="clear"></div>
 				</div>
 			</div>
 		</div>
@@ -44,6 +45,6 @@ export default {
 </script>
 
 <style>
-.mainLeft{width:15%;height:500px;background:red;}
-.mainRight{width:85%;height:500px;background:green;}
+.mainLeft{width:19%;height:500px;background:red;float:left;}
+.mainRight{width:80%;height:500px;background:green;float:right;}
 </style>
