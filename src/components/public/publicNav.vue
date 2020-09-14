@@ -35,14 +35,12 @@ export default {
   },
   props: ['activeSub'],
   created: function() {
-    console.log('activeSub:' + this.activeSub)
-    console.log('createed:' + this.activeIndex)
+    this.activeIndex = this.activeSub
   },
   methods: {
     handleSelect(key, keyPath) {
       console.log('handleSelectStart:' + this.activeIndex)
       this.activeIndex = key
-      console.log('handleSelectEnd:' + this.activeIndex)
 
       if (key === '1') {
         this.$router.push({name: 'Home'})
