@@ -51,8 +51,8 @@ export default {
 </script>
 
 <style>
-.mainLeft{width:23%;height:500px;background:red;float:left;}
-.mainRight{width:75%;height:500px;float:right;}
+.mainLeft{width:25%;height:600px;background:red;float:left;}
+.mainRight{width:74%;height:600px;float:right;}
 .mainShow{width:100%;height:100px;background:green;}
-.mainInput{width:100%;height:100px;background:blue;}
+.mainInput{width:100%;height:200px;background:blue;}
 </style>
