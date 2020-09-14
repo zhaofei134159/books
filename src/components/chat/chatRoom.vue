@@ -21,7 +21,9 @@
                 <div class="mainInputCenter">
                   <div class="mainInputCenterTop"></div>
                   <div class="mainInputCenterCont"></div>
-                  <div class="mainInputCenterFooter"></div>
+                  <div class="mainInputCenterFooter">
+                      <el-button plain class="mainSend">发送</el-button>
+                  </div>
                 </div>
               </div>
           </div>
@@ -57,7 +59,7 @@ export default {
 </script>
 
 <style>
-.mainLeft{width:24%;height:601px;float:left;border:solid 1px #ccc;}
+.mainLeft{width:26%;height:601px;float:left;border:solid 1px #ccc;}
 .mainRight{width:72%;height:600px;float:right;}
 .mainShow{width:100%;height:400px;border:solid 1px #ccc;border-bottom:none;}
 .mainInput{width:100%;height:200px;border:solid 1px #ccc;}
