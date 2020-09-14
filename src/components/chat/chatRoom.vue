@@ -23,7 +23,7 @@
                     <i class="el-icon-picture-outline-round"></i>
                   </div>
                   <div class="mainInputCenterCont">
-                      <el-input type="textarea" v-model="form.desc"></el-input>
+                      <el-input type="textarea" ></el-input>
                   </div>
                   <div class="mainInputCenterFooter">
                       <el-button plain class="mainSend">发送</el-button>
