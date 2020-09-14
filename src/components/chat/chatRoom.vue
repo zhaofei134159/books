@@ -57,10 +57,10 @@ export default {
 </script>
 
 <style>
-.mainLeft{width:25%;height:600px;float:left;border:solid 1px #ccc;}
+.mainLeft{width:25%;height:601px;float:left;border:solid 1px #ccc;}
 .mainRight{width:75%;height:600px;float:right;}
-.mainShow{width:100%;height:400px;border:solid 1px #ccc;}
-.mainInput{width:100%;height:200px;border:solid 1px #ccc;}
+.mainShow{width:100%;height:400px;border:solid 1px #ccc;border-left:none;border-bottom:none;}
+.mainInput{width:100%;height:200px;border:solid 1px #ccc;border-left:none;}
 .mainInputCenter{width:95%;height:100%;margin:0 auto;}
 .mainInputCenterTop{width:100%;height:40px;background:red;}
 .mainInputCenterCont{width:100%;height:120px;background:green;}
