@@ -35,7 +35,7 @@ export default {
   },
   props: ['activeSub'],
   created: function() {
-    this.activeIndex = this.activeSub
+    this.activeIndex = this.activeSub + ''
   },
   methods: {
     handleSelect(key, keyPath) {
