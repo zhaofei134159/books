@@ -39,7 +39,7 @@ export default {
       console.log(key, keyPath)
       if (key === '1') {
         this.$router.push({name: 'Home'})
-      }else if (key === '2') {
+      } else if (key === '2') {
         this.$router.push({name: 'ChatRoom'})
       }
     }
