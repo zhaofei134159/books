@@ -42,7 +42,7 @@ export default {
       } else if (key === '2') {
         this.$router.push({name: 'ChatRoom'})
       } else if (key === '3') {
-        window.location.href = 'https://blog.myfeiyou.com/home/about';
+        window.location.href = 'https://blog.myfeiyou.com/home/about'
       }
     }
   }
