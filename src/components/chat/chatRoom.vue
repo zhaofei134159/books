@@ -17,7 +17,11 @@
           </div>
           <div class="mainRight">
               <div class="mainShow"></div>
-              <div class="mainInput"></div>
+              <div class="mainInput">
+                <div class="mainInputCenter">
+                  
+                </div>
+              </div>
           </div>
           <div class="clear"></div>
           <el-divider></el-divider>
@@ -53,6 +57,7 @@ export default {
 <style>
 .mainLeft{width:25%;height:600px;background:red;float:left;}
 .mainRight{width:74%;height:600px;float:right;}
-.mainShow{width:100%;height:100px;background:green;}
-.mainInput{width:100%;height:200px;background:blue;}
+.mainShow{width:100%;height:400px;background:green;}
+.mainInput{width:100%;height:200px;border:solid 1px #ccc;}
+.mainInputCenter{width:90%;height:100%;margin:0 auto;background:blue;}
 </style>
