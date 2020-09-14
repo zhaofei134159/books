@@ -61,8 +61,8 @@ export default {
 .mainRight{width:74%;height:600px;float:right;}
 .mainShow{width:100%;height:400px;background:green;}
 .mainInput{width:100%;height:200px;border:solid 1px #ccc;}
-.mainInputCenter{width:90%;height:100%;margin:0 auto;background:blue;}
-.mainInputCenterTop{width:100%;height:20px;background:red;}
-.mainInputCenterCont{width:100%;height:20px;background:green;}
-.mainInputCenterFooter{width:100%;height:20px;background:yellow;}
+.mainInputCenter{width:95%;height:100%;margin:0 auto;background:blue;}
+.mainInputCenterTop{width:100%;height:40px;background:red;}
+.mainInputCenterCont{width:100%;height:120px;background:green;}
+.mainInputCenterFooter{width:100%;height:40px;background:yellow;}
 </style>
