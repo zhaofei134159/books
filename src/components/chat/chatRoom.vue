@@ -57,7 +57,7 @@ export default {
 </script>
 
 <style>
-.mainLeft{width:25%;height:601px;float:left;border:solid 1px #ccc;}
+.mainLeft{width:24.85%;height:601px;float:left;border:solid 1px #ccc;}
 .mainRight{width:75%;height:600px;float:right;}
 .mainShow{width:100%;height:400px;border:solid 1px #ccc;border-left:none;border-bottom:none;}
 .mainInput{width:100%;height:200px;border:solid 1px #ccc;border-left:none;}
