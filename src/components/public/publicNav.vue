@@ -3,7 +3,9 @@
 		<div id="topDiv">
 			<div class="clear"></div>
 			<el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-				<el-menu-item index="1" >首页</el-menu-item>
+				<el-menu-item index="1">首页</el-menu-item>
+				<el-menu-item index="2">聊天室</el-menu-item>
+				<el-menu-item index="3"><a href="https://blog.myfeiyou.com/home/about" target="_blank">关于我们</a></el-menu-item>
 				<!-- <el-submenu index="2">
 				<template slot="title">我的工作台</template>
 					<el-menu-item index="2-1">选项1</el-menu-item>
@@ -37,6 +39,8 @@ export default {
       console.log(key, keyPath)
       if (key === '1') {
         this.$router.push({name: 'Home'})
+      }else if (key === '2') {
+        this.$router.push({name: 'ChatRoom'})
       }
     }
   }
