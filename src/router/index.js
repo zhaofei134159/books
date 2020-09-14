@@ -1,8 +1,8 @@
-import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import ChapterList from '@/components/chapter/chapterList'
 import ChapterCont from '@/components/chapter/chapterCont'
+import ChatRoom from '@/components/chat/chatRoom'
 
 Vue.use(Router)
 
@@ -37,6 +37,14 @@ export default new Router({
       component: ChapterCont,
       meta: {
         title: '详情'
+      }
+    },
+    {
+      path: '/chat/chatRoom',
+      name: 'ChatRoom',
+      component: ChatRoom,
+      meta: {
+        title: '聊天室'
       }
     }
   ]

@@ -9,6 +9,8 @@
 				<div class="crumbs">
 					<el-breadcrumb separator-class="el-icon-arrow-right">
 						<el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
+						<el-breadcrumb-item :to="{ name: 'ChatRoom' }">聊天室</el-breadcrumb-item>
+						<el-breadcrumb-item><a href="https://blog.myfeiyou.com/home/about聊天室" target="_blank">关于我们</a></el-breadcrumb-item>
 					</el-breadcrumb>
 				</div>
 				<div class="mainCont">
