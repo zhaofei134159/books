@@ -43,6 +43,7 @@ export default new Router({
     {
       path: '/chat/chatRoom',
       name: 'ChatRoom',
+      props: true, // 若个要解耦的 到组件中 props 中。
       component: ChatRoom,
       meta: {
         title: '聊天室'

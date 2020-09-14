@@ -35,7 +35,7 @@ export default {
   },
   props:['activeSub'],
   created: function() {
-  	console.log('activeSub:' + this.activeSub)
+    console.log('activeSub:' + this.activeSub)
     console.log('createed:' + this.activeIndex)
   },
   methods: {
