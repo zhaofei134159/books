@@ -19,7 +19,9 @@
               <div class="mainShow"></div>
               <div class="mainInput">
                 <div class="mainInputCenter">
-                  
+                  <div class="mainInputCenterTop"></div>
+                  <div class="mainInputCenterCont"></div>
+                  <div class="mainInputCenterFooter"></div>
                 </div>
               </div>
           </div>
@@ -60,4 +62,7 @@ export default {
 .mainShow{width:100%;height:400px;background:green;}
 .mainInput{width:100%;height:200px;border:solid 1px #ccc;}
 .mainInputCenter{width:90%;height:100%;margin:0 auto;background:blue;}
+.mainInputCenterTop{width:100%;height:20px;background:red;}
+.mainInputCenterCont{width:100%;height:20px;background:green;}
+.mainInputCenterFooter{width:100%;height:20px;background:yellow;}
 </style>
