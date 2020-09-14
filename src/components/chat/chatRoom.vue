@@ -45,5 +45,5 @@ export default {
 
 <style>
 .mainLeft{width:15%;height:500px;background:red;}
-.mainLeft{width:85%;height:500px;background:green;}
+.mainRight{width:85%;height:500px;background:green;}
 </style>
