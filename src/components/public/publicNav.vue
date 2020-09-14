@@ -38,7 +38,6 @@ export default {
   },
   methods: {
     handleSelect(key, keyPath) {
-
       console.log('handleSelectStart:' + this.activeIndex)
       this.activeIndex = key
       console.log('handleSelectEnd:' + this.activeIndex)
