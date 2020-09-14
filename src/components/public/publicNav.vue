@@ -33,6 +33,9 @@ export default {
       activeIndex: '1'
     }
   },
+  created: function() {
+  	console.log('createed:'+this.activeIndex)
+  },
   methods: {
     handleSelect(key, keyPath) {
       console.log(key, keyPath)
