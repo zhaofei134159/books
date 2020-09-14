@@ -30,13 +30,13 @@ export default {
   name: 'publicNav',
   data() {
     return {
-      activeIndex: '1',
-      activeIndex2: '1'
+      activeIndex: '1'
     }
   },
   methods: {
     handleSelect(key, keyPath) {
       console.log(key, keyPath)
+      this.activeIndex = key
       if (key === '1') {
         this.$router.push({name: 'Home'})
       } else if (key === '2') {
