@@ -12,8 +12,13 @@
 					</el-breadcrumb>
 				</div>
 				<div class="mainCont">
-          <div class="mainLeft"></div>
-          <div class="mainRight"></div>
+          <div class="mainLeft">
+              <div></div>
+          </div>
+          <div class="mainRight">
+              <div class="mainShow"></div>
+              <div class="mainInput"></div>
+          </div>
           <div class="clear"></div>
           <el-divider></el-divider>
 				</div>
@@ -46,6 +51,8 @@ export default {
 </script>
 
 <style>
-.mainLeft{width:19%;height:500px;background:red;float:left;}
-.mainRight{width:80%;height:500px;background:green;float:right;}
+.mainLeft{width:23%;height:500px;background:red;float:left;}
+.mainRight{width:75%;height:500px;float:right;}
+.mainShow{width:100%;height:100px;background:green;}
+.mainInput{width:100%;height:100px;background:blue;}
 </style>
