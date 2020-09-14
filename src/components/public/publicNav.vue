@@ -38,8 +38,11 @@ export default {
   },
   methods: {
     handleSelect(key, keyPath) {
-      console.log(key, keyPath)
+
+      console.log('handleSelectStart:' + this.activeIndex)
       this.activeIndex = key
+      console.log('handleSelectEnd:' + this.activeIndex)
+
       if (key === '1') {
         this.$router.push({name: 'Home'})
       } else if (key === '2') {
