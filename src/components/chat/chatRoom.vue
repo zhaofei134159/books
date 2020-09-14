@@ -8,11 +8,12 @@
 			<div id="mainDiv">
 				<div class="crumbs">
 					<el-breadcrumb separator-class="el-icon-arrow-right">
-						<el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
 						<el-breadcrumb-item>聊天室</el-breadcrumb-item>
 					</el-breadcrumb>
 				</div>
 				<div class="mainCont">
+          <div class="mainLeft"></div>
+          <div class="mainRight"></div>
 				</div>
 			</div>
 		</div>
@@ -43,5 +44,6 @@ export default {
 </script>
 
 <style>
-
+.mainLeft{width:15%;height:500px;background:red;}
+.mainLeft{width:85%;height:500px;background:green;}
 </style>

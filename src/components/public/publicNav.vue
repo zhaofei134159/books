@@ -39,7 +39,6 @@ export default {
   },
   methods: {
     handleSelect(key, keyPath) {
-      console.log('handleSelectStart:' + this.activeIndex)
       this.activeIndex = key
 
       if (key === '1') {
