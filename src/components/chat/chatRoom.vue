@@ -19,7 +19,9 @@
               <div class="mainShow"></div>
               <div class="mainInput">
                 <div class="mainInputCenter">
-                  <div class="mainInputCenterTop"></div>
+                  <div class="mainInputCenterTop">
+                    <i class="el-icon-picture-outline-round"></i>
+                  </div>
                   <div class="mainInputCenterCont"></div>
                   <div class="mainInputCenterFooter">
                       <el-button plain class="mainSend">发送</el-button>
@@ -66,5 +68,6 @@ export default {
 .mainInputCenter{width:95%;height:100%;margin:0 auto;}
 .mainInputCenterTop{width:100%;height:40px;background:red;}
 .mainInputCenterCont{width:100%;height:120px;background:green;}
-.mainInputCenterFooter{width:100%;height:40px;background:yellow;}
+.mainInputCenterFooter{width:100%;height:40px;}
+.mainSend{height:100%;width:100px;}
 </style>
