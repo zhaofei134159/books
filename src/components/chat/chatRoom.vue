@@ -22,7 +22,9 @@
                   <div class="mainInputCenterTop">
                     <i class="el-icon-picture-outline-round"></i>
                   </div>
-                  <div class="mainInputCenterCont"></div>
+                  <div class="mainInputCenterCont">
+                      <el-input type="textarea" v-model="form.desc"></el-input>
+                  </div>
                   <div class="mainInputCenterFooter">
                       <el-button plain class="mainSend">发送</el-button>
                   </div>
@@ -61,13 +63,13 @@ export default {
 </script>
 
 <style>
-.mainLeft{width:26%;height:601px;float:left;border:solid 1px #ccc;}
-.mainRight{width:72%;height:600px;float:right;}
-.mainShow{width:100%;height:400px;border:solid 1px #ccc;border-bottom:none;}
+.mainLeft{width:26%;height:701px;float:left;border:solid 1px #ccc;}
+.mainRight{width:72%;height:700px;float:right;}
+.mainShow{width:100%;height:500px;border:solid 1px #ccc;border-bottom:none;}
 .mainInput{width:100%;height:200px;border:solid 1px #ccc;}
 .mainInputCenter{width:95%;height:100%;margin:0 auto;}
 .mainInputCenterTop{width:100%;height:40px;background:red;}
 .mainInputCenterCont{width:100%;height:120px;background:green;}
-.mainInputCenterFooter{width:100%;height:40px;}
+.mainInputCenterFooter{width:100%;height:40px;text-align:right;}
 .mainSend{height:100%;width:100px;}
 </style>
