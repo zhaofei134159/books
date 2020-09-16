@@ -69,7 +69,7 @@ export default {
 .mainInputCenter{width:95%;height:100%;margin:0 auto;}
 .mainInputCenterTop{width:100%;height:20px;}
 .mainInputCenterCont{width:100%;height:140px;}
-.el-textarea textarea{width:100%;border-radius: 0px; border: none;min-height: 140px; resize: none;}
+.mainInputCenterCont textarea{width:100%;border-radius: 0px; border: none;min-height: 140px; resize: none;}
 .mainInputCenterFooter{width:100%;height:40px;text-align:right;}
 .mainSend{height:100%;width:100px;}
 </style>
