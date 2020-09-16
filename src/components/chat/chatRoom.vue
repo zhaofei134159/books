@@ -22,7 +22,14 @@
                   <div class="mainInputCenterTop">
                   </div>
                   <div class="mainInputCenterCont">
-                      <textarea name="sendCont" id="sendCont"></textarea>
+                      <el-input
+                        type="textarea"
+                        placeholder="请输入内容"
+                        v-model="textarea"
+                        maxlength="30"
+                        show-word-limit
+                      >
+                      </el-input>
                   </div>
                   <div class="mainInputCenterFooter">
                       <el-button plain class="mainSend">发送</el-button>
