@@ -20,10 +20,9 @@
               <div class="mainInput">
                 <div class="mainInputCenter">
                   <div class="mainInputCenterTop">
-                    <i class="el-icon-picture-outline-round"></i>
                   </div>
                   <div class="mainInputCenterCont">
-                      <el-input type="textarea" ></el-input>
+                      <el-input type="textarea" class="mainInputCenterContText"></el-input>
                   </div>
                   <div class="mainInputCenterFooter">
                       <el-button plain class="mainSend">发送</el-button>
@@ -68,8 +67,9 @@ export default {
 .mainShow{width:100%;height:500px;border:solid 1px #ccc;border-bottom:none;}
 .mainInput{width:100%;height:200px;border:solid 1px #ccc;}
 .mainInputCenter{width:95%;height:100%;margin:0 auto;}
-.mainInputCenterTop{width:100%;height:0px;background:red;}
-.mainInputCenterCont{width:100%;height:120px;background:green;}
+.mainInputCenterTop{width:100%;height:20px;}
+.mainInputCenterCont{width:100%;height:140px;}
+.mainInputCenterContText{border-radius: 0px; border: none;min-height: 140px; resize: none;}
 .mainInputCenterFooter{width:100%;height:40px;text-align:right;}
 .mainSend{height:100%;width:100px;}
 </style>
