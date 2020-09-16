@@ -22,14 +22,7 @@
                   <div class="mainInputCenterTop">
                   </div>
                   <div class="mainInputCenterCont">
-                      <el-input
-                        type="textarea"
-                        placeholder="请输入内容"
-                        v-model="textarea"
-                        maxlength="30"
-                        show-word-limit
-                      >
-                      </el-input>
+                      <textarea name="sendCont" id="sendCont"  autocomplete="off" placeholder="请输入内容" maxlength="30"></textarea>
                   </div>
                   <div class="mainInputCenterFooter">
                       <el-button plain class="mainSend">发送</el-button>
@@ -76,7 +69,7 @@ export default {
 .mainInputCenter{width:95%;height:100%;margin:0 auto;}
 .mainInputCenterTop{width:100%;height:20px;}
 .mainInputCenterCont{width:100%;height:140px;}
-.mainInputCenterCont textarea{width:100%;border-radius: 0px; border: none;min-height: 140px; resize: none;}
+.emainInputCenterCont textarea{width:100%;border-radius: 0px; border: none;min-height: 140px; resize: none;}
 .mainInputCenterFooter{width:100%;height:40px;text-align:right;}
 .mainSend{height:100%;width:100px;}
 </style>
