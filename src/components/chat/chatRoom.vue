@@ -68,7 +68,7 @@ export default {
 .mainShow{width:100%;height:500px;border:solid 1px #ccc;border-bottom:none;}
 .mainInput{width:100%;height:200px;border:solid 1px #ccc;}
 .mainInputCenter{width:95%;height:100%;margin:0 auto;}
-.mainInputCenterTop{width:100%;height:40px;background:red;}
+.mainInputCenterTop{width:100%;height:0px;background:red;}
 .mainInputCenterCont{width:100%;height:120px;background:green;}
 .mainInputCenterFooter{width:100%;height:40px;text-align:right;}
 .mainSend{height:100%;width:100px;}
