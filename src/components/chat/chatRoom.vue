@@ -13,7 +13,8 @@
 				</div>
 				<div class="mainCont">
           <div class="mainLeft">
-              <div></div>
+              <div class="mainLeftNav"></div>
+              <div class="mainLeftZhu"></div>
           </div>
           <div class="mainRight">
               <div class="mainShow"></div>
@@ -25,7 +26,7 @@
                       <textarea name="sendCont" id="sendCont"  autocomplete="off" placeholder="请输入内容" maxlength="30"></textarea>
                   </div>
                   <div class="mainInputCenterFooter">
-                      <el-button plain class="mainSend">发送</el-button>
+                      <el-button plain class="mainSend" @click="sendText()">发送</el-button>
                   </div>
                 </div>
               </div>
@@ -53,11 +54,38 @@ export default {
   },
   data () {
     return {
-      sourceUrl: 'https://blog.myfeiyou.com'
+      sourceUrl: 'https://blog.myfeiyou.com',
+      socket: null
     }
   },
-  created: function() {},
-  methods: {}
+  created: function() {
+    this.socket_link()
+  },
+  methods: {
+    socket_link() {
+      var url = 'ws://104.243.18.161:8000'
+      this.socket = new WebSocket(url)
+      socket.onopen = function() {
+        console.log('连接成功')
+      }
+      socket.onmessage = function(msg) {
+        log(msg)
+        console.log(msg)
+      }
+      socket.onclose = function() {
+        console.log('断开连接')
+      }
+    },
+    dis() {
+      this.socket.close()
+      this.socket = null
+    },
+    sendText() {
+      var val = $('#sendCont').attr('value')
+      console.log(val)
+      this.socket.send(val)
+    }
+  }
 }
 </script>
 
@@ -68,8 +96,8 @@ export default {
 .mainInput{width:100%;height:200px;border:solid 1px #ccc;}
 .mainInputCenter{width:95%;height:100%;margin:0 auto;}
 .mainInputCenterTop{width:100%;height:20px;}
-.mainInputCenterCont{width:100%;height:140px;}
-.mainInputCenterCont textarea{width:100%;border-radius: 0px; border: none;min-height: 140px; resize: none;}
+.mainInputCenterCont{width:100%;}
+.mainInputCenterCont textarea{width: 97%;border-radius: 10px;/* border: none; */padding: 10px;min-height: 100px;resize: none;}
 .mainInputCenterFooter{width:100%;height:40px;text-align:right;}
-.mainSend{height:100%;width:100px;}
+.mainSend{width:100px;}
 </style>
