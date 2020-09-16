@@ -65,14 +65,14 @@ export default {
     socket_link() {
       var url = 'ws://104.243.18.161:8000'
       this.socket = new WebSocket(url)
-      socket.onopen = function() {
+      this.socket.onopen = function() {
         console.log('连接成功')
       }
-      socket.onmessage = function(msg) {
-        log(msg)
+      this.socket.onmessage = function(msg) {
+        // log(msg)
         console.log(msg)
       }
-      socket.onclose = function() {
+      this.socket.onclose = function() {
         console.log('断开连接')
       }
     },
@@ -81,7 +81,7 @@ export default {
       this.socket = null
     },
     sendText() {
-      var val = $('#sendCont').attr('value')
+      var val = '开始开始'
       console.log(val)
       this.socket.send(val)
     }
