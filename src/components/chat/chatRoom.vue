@@ -22,7 +22,7 @@
                   <div class="mainInputCenterTop">
                   </div>
                   <div class="mainInputCenterCont">
-                      <el-input type="textarea" class="mainInputCenterContText"></el-input>
+                      <el-input type="textarea" ></el-input>
                   </div>
                   <div class="mainInputCenterFooter">
                       <el-button plain class="mainSend">发送</el-button>
@@ -69,7 +69,7 @@ export default {
 .mainInputCenter{width:95%;height:100%;margin:0 auto;}
 .mainInputCenterTop{width:100%;height:20px;}
 .mainInputCenterCont{width:100%;height:140px;}
-.mainInputCenterContText{border-radius: 0px; border: none;min-height: 140px; resize: none;}
+.el-textarea textarea{border-radius: 0px; border: none;min-height: 140px; resize: none;}
 .mainInputCenterFooter{width:100%;height:40px;text-align:right;}
 .mainSend{height:100%;width:100px;}
 </style>
