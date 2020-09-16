@@ -63,7 +63,7 @@ export default {
   },
   methods: {
     socket_link() {
-      var url = 'ws://104.243.18.161:8000'
+      var url = 'ws://104.243.18.161:8282'
       this.socket = new WebSocket(url)
       this.socket.onopen = function() {
         console.log('连接成功')
