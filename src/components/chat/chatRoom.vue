@@ -91,6 +91,8 @@ export default {
 
 <style>
 .mainLeft{width:26%;height:701px;float:left;border:solid 1px #ccc;}
+.mainLeftNav{width:20%;height:701px;float:left;background:black;}
+.mainLeftZhu{width:80%;height:701px;float:left;background:red;}
 .mainRight{width:72%;height:700px;float:right;}
 .mainShow{width:100%;height:500px;border:solid 1px #ccc;border-bottom:none;}
 .mainInput{width:100%;height:200px;border:solid 1px #ccc;}
