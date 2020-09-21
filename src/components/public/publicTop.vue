@@ -23,7 +23,7 @@ export default {
       this.$router.push({name: 'Home'})
     },
     linkLogin() {
-      window.location.href = 'https://blog.myfeiyou.com/home/login';
+      window.location.href = 'https://blog.myfeiyou.com/home/login'
     }
   }
 }
