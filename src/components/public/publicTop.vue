@@ -4,7 +4,9 @@
 			<div class="headerLeft">
 				<div @click="linkHome()">booksfamily</div>
 			</div>
-			<div class="headerRight"></div>
+			<div class="headerRight">
+        <div @click="linkLogin()">登陆</div>
+      </div>
 		</div>
 	</div>
 </template>
@@ -19,6 +21,9 @@ export default {
   methods: {
     linkHome() {
       this.$router.push({name: 'Home'})
+    },
+    linkLogin() {
+      window.location.href = 'https://blog.myfeiyou.com/home/login';
     }
   }
 }
