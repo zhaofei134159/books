@@ -9,7 +9,7 @@ body{margin:0px;padding:0px;}
 .headerLeft{width:50%;height:50px;line-height:50px;font-size:16px;color:#9d9d9d;font-weight:bold;text-align:left;float:left;}
 .headerLeft div{cursor:pointer;}
 .headerRight{width:50%;height:50px;line-height:50px;font-size:16px;color:#9d9d9d;font-weight:bold;text-align:right;float:right;}
-.headerLeft div{cursor:pointer;}
+.headerRight div{cursor:pointer;}
 .el-menu.el-menu--horizontal{padding:5px 0px;}
 
 #mainDiv{width:100%;min-height:100vh;}
