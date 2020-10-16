@@ -4,9 +4,8 @@
 
 		<publicNav></publicNav>
 
-		<div class="rowDiv">
-			
-		</div>
+		<div class="rowDiv"></div>
+    
 		<publicFooter></publicFooter>
 	</div>
 </template>
@@ -25,9 +24,7 @@ export default {
   },
   data () {
     return {
-      sourceUrl: 'https://blog.myfeiyou.com',
-      work: {},
-      workInfo: {}
+      sourceUrl: 'https://blog.myfeiyou.com'
     }
   },
   created: function() {},

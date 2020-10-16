@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import ChapterList from '@/components/chapter/chapterList'
 import ChapterCont from '@/components/chapter/chapterCont'
+import PictureList from '@/components/picture/pictureList'
 import ChatRoom from '@/components/chat/chatRoom'
 
 Vue.use(Router)
