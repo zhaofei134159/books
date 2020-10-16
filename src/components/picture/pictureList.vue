@@ -14,7 +14,7 @@
         </div>
         <div class="mainCont">
           <div class="bottonTitle">
-            <el-button class="bottonClass" v-for="(val, index) in imgTag" :key="index" size="medium">{{ val.name }} <span>{{val.count}}</span></el-button>
+            <el-button class="bottonClass" v-for="(val, index) in imgTag" :key="index" size="medium"  @click="getTagPic(val.id)" >{{ val.name }} <span>{{val.count}}</span></el-button>
           </div>
           <el-divider></el-divider>
           <div class="picCon" ref="my_pull">
@@ -68,7 +68,8 @@ export default {
       images: [],
       el: {},
       page: 1,
-      isbottom: -1
+      isbottom: -1,
+      tagId:0,
     }
   },
   mounted: function() {
@@ -90,9 +91,14 @@ export default {
         this.getPictureListPage(this.page)
       }
     },
-    getPictureListPage(val) {
+    getTagPic(tagId) {
+      this.tagId = tagId
+      this.images = []
+      this.getPictureListPage(1,tagId)
+    },
+    getPictureListPage(val,tagId=0) {
       var self = this
-      getPictureList(val).then(res => {
+      getPictureList(val,tagId).then(res => {
         if (res.errorNo === '0') {
           self.imgTag = res.seccuss.imgTag
           self.images = self.images.concat(res.seccuss.images)
