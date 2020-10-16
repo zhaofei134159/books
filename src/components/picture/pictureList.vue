@@ -85,11 +85,11 @@ export default {
       console.log('a:' + a)
       console.log('body:' + document.body.scrollHeight)
       console.log(this.clientHeight - 100)
-      if (a * this.page >= (this.clientHeight - 100)) {
-        this.isbottom = -1
-        this.page++
-        this.getPictureListPage(this.page)
-      }
+      // if (a * this.page >= (this.clientHeight - 100)) {
+      //   this.isbottom = -1
+      //   this.page++
+      //   this.getPictureListPage(this.page)
+      // }
     },
     getPictureListPage(val) {
       var self = this
