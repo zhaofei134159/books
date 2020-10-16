@@ -69,7 +69,7 @@ export default {
       el: {},
       page: 1,
       isbottom: -1,
-      tagId: 0,
+      tagId: 0
     }
   },
   mounted: function() {
