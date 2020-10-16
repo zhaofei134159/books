@@ -69,7 +69,9 @@ export default {
   },
   mounted: function() {
     this.clientHeight = document.documentElement.clientHeight
-    window.addEventListener('scroll', this.handleScroll)
+    this.$nextTick(() => {
+      window.addEventListener('scroll', this.handleScroll)
+    })
   },
   created: function() {
     this.getPictureListPage(1)
