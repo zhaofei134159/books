@@ -62,14 +62,12 @@ export default {
       sourceUrl: 'https://blog.myfeiyou.com',
       imgTag: {},
       images: [],
-      clientHeight: 0,
       el: {},
       page: 1,
       isbottom: -1
     }
   },
   mounted: function() {
-    this.clientHeight = document.documentElement.clientHeight
     this.$nextTick(() => {
       this.el = this.$refs.my_pull
       window.addEventListener('scroll', this.handleScroll, true)
@@ -80,11 +78,10 @@ export default {
   },
   methods: {
     handleScroll() {
-      let a = this.el.getBoundingClientRect().bottom
+      let a = this.el.getBoundingClientRect().top
       a = Math.ceil(a)
       console.log('a:' + a)
       console.log('body:' + document.body.scrollHeight)
-      console.log(this.clientHeight - 100)
       // if (a * this.page >= (this.clientHeight - 100)) {
       //   this.isbottom = -1
       //   this.page++
