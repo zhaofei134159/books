@@ -90,11 +90,16 @@ export default {
       if (b <= 0) {
         dataBody = a - Math.abs(b)
       }
-      if (dataBody >= (this.el.scrollHeight - 10)) {
-        this.isbottom = -1
-        this.page++
-        this.getPictureListPage(this.page)
-      }
+
+      console.log('a:' + a)
+      console.log('b:' + b)
+      console.log('dataBody:' + dataBody)
+      console.log('body:' + this.el.scrollHeight)
+      // if (dataBody >= (this.el.scrollHeight - 10)) {
+      //   this.isbottom = -1
+      //   this.page++
+      //   this.getPictureListPage(this.page)
+      // }
     },
     getPictureListPage(val) {
       var self = this
