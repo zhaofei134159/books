@@ -14,14 +14,7 @@
         </div>
         <div class="mainCont">
           <div class="bottonTitle">
-            <el-button size="medium">中等按钮</el-button>
-            <el-button size="medium">中等按钮</el-button>
-            <el-button size="medium">中等按钮</el-button>
-            <el-button size="medium">中等按钮</el-button>
-            <el-button size="medium">中等按钮</el-button>
-            <el-button size="medium">中等按钮</el-button>
-            <el-button size="medium">中等按钮</el-button>
-            <el-button size="medium">中等按钮</el-button>
+            <el-button v-for="(val, index) in imgTag" :key="index" size="medium">{{ val.name }} <span>{{val.count}}</span></el-button>
           </div>
           <div class="picCon">
             
@@ -49,7 +42,8 @@ export default {
   },
   data () {
     return {
-      sourceUrl: 'https://blog.myfeiyou.com'
+      sourceUrl: 'https://blog.myfeiyou.com',
+      imgTag: {}
     }
   },
   created: function() {
@@ -60,7 +54,7 @@ export default {
       var self = this
       getPictureList(val).then(res => {
         if (res.errorNo === '0') {
-          
+          self.imgTag = res.seccuss.imgTag
         } else {
           this.$message.error('请求错误, 请重试！')
         }
