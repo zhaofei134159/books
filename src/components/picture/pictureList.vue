@@ -96,6 +96,7 @@ export default {
       console.log('dataBody:' + dataBody)
       console.log('body:' + this.el.scrollHeight)
       console.log('look:' + this.el.offsetHeight)
+      console.log('clientHeight:' + document.documentElement.clientHeight)
       // if (dataBody >= (this.el.scrollHeight - 10)) {
       //   this.isbottom = -1
       //   this.page++
