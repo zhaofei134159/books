@@ -81,7 +81,7 @@ export default {
       let a = this.el.getBoundingClientRect().top
       a = Math.ceil(a)
       console.log('a:' + a)
-      console.log('body:' + this.$el.getElementByClassName('picCon').eq(0).scrollHeight)
+      console.log('body:' + this.el.scrollHeight)
       // if (a * this.page >= (this.clientHeight - 100)) {
       //   this.isbottom = -1
       //   this.page++
