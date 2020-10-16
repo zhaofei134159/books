@@ -69,7 +69,7 @@ export default {
       el: {},
       page: 1,
       isbottom: -1,
-      tagId:0,
+      tagId: 0,
     }
   },
   mounted: function() {
@@ -94,11 +94,11 @@ export default {
     getTagPic(tagId) {
       this.tagId = tagId
       this.images = []
-      this.getPictureListPage(1,tagId)
+      this.getPictureListPage(1, tagId)
     },
-    getPictureListPage(val,tagId=0) {
+    getPictureListPage(val, tagId = 0) {
       var self = this
-      getPictureList(val,tagId).then(res => {
+      getPictureList(val, tagId).then(res => {
         if (res.errorNo === '0') {
           self.imgTag = res.seccuss.imgTag
           self.images = self.images.concat(res.seccuss.images)
