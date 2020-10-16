@@ -17,7 +17,7 @@
             <el-button class="bottonClass" v-for="(val, index) in imgTag" :key="index" size="medium">{{ val.name }} <span>{{val.count}}</span></el-button>
           </div>
           <el-divider></el-divider>
-          <div class="picCon">
+          <div class="picCon" ref="my_pull">
 
             <el-row>
               <el-col v-for="(val, index) in images" :span="5" :key="index" class="colClass">
@@ -70,6 +70,7 @@ export default {
   mounted: function() {
     this.clientHeight = document.documentElement.clientHeight
     this.$nextTick(() => {
+      this.el = this.$refs.my_pull;
       window.addEventListener('scroll', this.handleScroll, true)
     })
   },
@@ -78,7 +79,7 @@ export default {
   },
   methods: {
     handleScroll() {
-      let a = this.el.getBoundingClientRect().bottom
+      let a = this.el.target.getBoundingClientRect().bottom
       a = Math.ceil(a)
       if (a === this.clientHeight) {
         this.isbottom = -1
