@@ -88,7 +88,7 @@ export default {
       b = Math.ceil(b)
       let dataBody = a - b
       if (b <= 0) {
-        dataBody = a - Math.abs(b)
+        dataBody = a + Math.abs(b)
       }
 
       console.log('a:' + a)
