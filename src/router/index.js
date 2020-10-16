@@ -41,7 +41,7 @@ export default new Router({
       }
     },
     {
-      path: '/picture/pictureExhibit',
+      path: '/picture/pictureList',
       name: 'PictureList',
       component: PictureList,
       meta: {
