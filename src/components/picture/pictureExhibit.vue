@@ -16,7 +16,6 @@ import '../../../static/books_css/main.css'
 import publicTop from '@/components/public/publicTop'
 import publicNav from '@/components/public/publicNav'
 import publicFooter from '@/components/public/publicFooter'
-import {getFamouWorkInfo} from '@/request/api.js'
 export default {
   name: 'PictureList',
   components: {
@@ -30,9 +29,6 @@ export default {
       work: {},
       workInfo: {}
     }
-  },
-  props: {
-    id: String
   },
   created: function() {},
   methods: {}
