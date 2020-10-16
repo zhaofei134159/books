@@ -14,9 +14,18 @@
         </div>
         <div class="mainCont">
           <div class="bottonTitle">
-            <el-button v-for="(val, index) in imgTag" :key="index" size="medium">{{ val.name }} <span>{{val.count}}</span></el-button>
+            <el-button class="bottonClass" v-for="(val, index) in imgTag" :key="index" size="medium">{{ val.name }} <span>{{val.count}}</span></el-button>
           </div>
+          <el-divider></el-divider>
           <div class="picCon">
+
+            <el-row>
+              <el-col v-for="(val, index) in images" :span="5" :key="index" class="colClass">
+                <el-card>
+                  <img src="{{ val.wide_src }}" class="image">
+                </el-card>
+              </el-col>
+            </el-row>
 
           </div>
         </div>
@@ -43,7 +52,8 @@ export default {
   data () {
     return {
       sourceUrl: 'https://blog.myfeiyou.com',
-      imgTag: {}
+      imgTag: {},
+      images: {}
     }
   },
   created: function() {
@@ -55,6 +65,7 @@ export default {
       getPictureList(val).then(res => {
         if (res.errorNo === '0') {
           self.imgTag = res.seccuss.imgTag
+          self.images = res.seccuss.images
         } else {
           this.$message.error('请求错误, 请重试！')
         }
@@ -66,5 +77,6 @@ export default {
 
 <style>
 .bottonTitle{width:100%;}
+.bottonClass{margin:10px;}
 .picCon{width:100%;}
 </style>
