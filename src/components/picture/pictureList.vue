@@ -2,7 +2,7 @@
 	<div id="bodyDiv">
 		<publicTop></publicTop>
 
-		<publicNav></publicNav>
+		<publicNav :activeSub="2"></publicNav>
     
     <div class="rowDiv">
       <div id="mainDiv">
