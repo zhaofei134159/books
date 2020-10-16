@@ -1,7 +1,7 @@
 <template>
 	<div id="footerDiv">
 		<div class="widewrapper">
-			网站所有资源来源于互联网，若有侵权问题请及时联系QQ(8387379721)，我们会尽快处理。
+			网站所有资源来源于互联网，若有侵权问题请及时联系QQ(837379721)，我们会尽快处理。
 			<br/>
 			© 2015 family 来自 <a href="https://books.myfeiyou.com/" target="_blank" title="family">family</a>
 			<a href="http://www.beian.miit.gov.cn" target="__black">京ICP备16026346号-1</a>
