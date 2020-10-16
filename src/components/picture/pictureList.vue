@@ -5,7 +5,7 @@
 		<publicNav></publicNav>
 
 		<div class="rowDiv"></div>
-    
+
 		<publicFooter></publicFooter>
 	</div>
 </template>
