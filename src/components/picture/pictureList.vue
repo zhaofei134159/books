@@ -95,9 +95,9 @@ export default {
             self.isbottom = 0
           } else {
             self.isbottom = 1
+            window.removeEventListener('scroll', self.handleScroll)
           }
 
-          window.removeEventListener('scroll', self.handleScroll)
         } else {
           this.$message.error('请求错误, 请重试！')
         }
