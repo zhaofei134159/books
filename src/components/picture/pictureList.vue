@@ -17,7 +17,7 @@
             <el-button v-for="(val, index) in imgTag" :key="index" size="medium">{{ val.name }} <span>{{val.count}}</span></el-button>
           </div>
           <div class="picCon">
-            
+
           </div>
         </div>
       </div>

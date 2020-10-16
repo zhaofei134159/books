@@ -47,6 +47,6 @@ export function getPictureList(page) {
   return Service({
     url: '/api/work/getPictureList',
     method: 'get',
-    params: { page: page}
+    params: { page: page }
   })
 }
