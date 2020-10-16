@@ -84,7 +84,7 @@ export default {
       a = Math.ceil(a)
       console.log(a)
       console.log(this.clientHeight - 100)
-      if (a === (this.clientHeight - 100)) {
+      if (a >= (this.clientHeight - 100)) {
         this.isbottom = -1
         this.page++
         this.getPictureListPage(this.page)
