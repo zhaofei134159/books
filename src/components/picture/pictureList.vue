@@ -87,10 +87,9 @@ export default {
       a = Math.ceil(a)
       b = Math.ceil(b)
       let dataBody = a - b
-      if(b<=0){
+      if (b <= 0) {
         dataBody = a - Math.abs(b)
       }
-      
       if (dataBody >= (this.el.scrollHeight - 10)) {
         this.isbottom = -1
         this.page++
