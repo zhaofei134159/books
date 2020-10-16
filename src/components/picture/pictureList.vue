@@ -71,7 +71,7 @@ export default {
   mounted: function() {
     this.clientHeight = document.documentElement.clientHeight
     this.$nextTick(() => {
-      this.el = this.$refs.my_pull;
+      this.el = this.$refs.my_pull
       window.addEventListener('scroll', this.handleScroll, true)
     })
   },
