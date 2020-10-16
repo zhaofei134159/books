@@ -22,7 +22,7 @@
             <el-row>
               <el-col v-for="(val, index) in images" :span="5" :key="index" class="colClass">
                 <el-card>
-                  <img :src="{{ val.wide_src }}" class="image">
+                  <img :src="val.wide_src" class="image">
                 </el-card>
               </el-col>
             </el-row>
