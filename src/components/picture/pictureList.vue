@@ -63,6 +63,7 @@ export default {
       imgTag: {},
       images: [],
       clientHeight: 0,
+      el: {},
       page: 1,
       isbottom: -1
     }
