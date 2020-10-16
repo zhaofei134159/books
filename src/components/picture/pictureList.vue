@@ -32,11 +32,10 @@
             </el-row>
 
             <div v-if="isbottom == -1" class="isbottom">
-                <i class="iconfont icon-jiazai1"></i>
-                <span>加载中，请稍后</span>
+                <el-divider><i class="el-icon-loading"></i> 加载中，请稍后</el-divider>
             </div>
             <div v-if="isbottom == 1" class="isbottom">
-                <span>没有更多数据了</span>
+                <el-divider><i class="el-icon-warning"></i> 没有更多数据了</el-divider>
             </div>
 
           </div>
