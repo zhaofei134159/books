@@ -88,6 +88,7 @@ export default {
       if (a <= (document.documentElement.clientHeight - 80)) {
         this.isbottom = -1
         this.page++
+        console.log(this.tagId)
         this.getPictureListPage(this.page,this.tagId)
       }
     },
