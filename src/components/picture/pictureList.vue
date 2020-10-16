@@ -70,7 +70,7 @@ export default {
   mounted: function() {
     this.clientHeight = document.documentElement.clientHeight
     this.$nextTick(() => {
-      window.addEventListener('scroll', this.handleScroll)
+      window.addEventListener('scroll', this.handleScroll, true)
     })
   },
   created: function() {
@@ -97,7 +97,7 @@ export default {
             self.isbottom = 0
           } else {
             self.isbottom = 1
-            window.removeEventListener('scroll', self.handleScroll)
+            window.removeEventListener('scroll', self.handleScroll, true)
           }
         } else {
           this.$message.error('请求错误, 请重试！')
