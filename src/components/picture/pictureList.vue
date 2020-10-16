@@ -80,7 +80,7 @@ export default {
   },
   methods: {
     handleScroll() {
-      let a = this.el.target.getBoundingClientRect().bottom
+      let a = this.el.getBoundingClientRect().bottom
       a = Math.ceil(a)
       if (a === this.clientHeight) {
         this.isbottom = -1
