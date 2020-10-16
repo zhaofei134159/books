@@ -41,6 +41,15 @@ export default new Router({
       }
     },
     {
+      path: '/picture/pictureExhibit',
+      name: 'PictureList',
+      props: true, // 若个要解耦的 到组件中 props 中。
+      component: PictureList,
+      meta: {
+        title: '图展'
+      }
+    },
+    {
       path: '/chat/chatRoom',
       name: 'ChatRoom',
       props: true, // 若个要解耦的 到组件中 props 中。
