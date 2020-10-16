@@ -89,7 +89,7 @@ export default {
       a = Math.ceil(a)
       console.log(a)
       console.log(document.documentElement.clientHeight)
-      if (a <= (document.documentElement.clientHeight - 100)) {
+      if (a <= (document.documentElement.clientHeight - 80)) {
         this.isbottom = -1
         this.page++
         this.getPictureListPage(this.page, this.tagId)
