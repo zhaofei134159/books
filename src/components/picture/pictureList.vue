@@ -97,7 +97,7 @@ export default {
       console.log('body:' + this.el.scrollHeight)
       console.log('look:' + this.el.offsetHeight)
       console.log('clientHeight:' + document.documentElement.clientHeight)
-      if (a <= (document.documentElement.clientHeight - 100)) {
+      if (a <= (document.documentElement.clientHeight - 80)) {
         this.isbottom = -1
         this.page++
         this.getPictureListPage(this.page)
