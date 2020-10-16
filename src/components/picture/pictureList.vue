@@ -78,7 +78,7 @@ export default {
   },
   methods: {
     handleScroll() {
-      let a = this.el.getBoundingClientRect().top
+      let a = this.el.getBoundingClientRect().bottom
       a = Math.ceil(a)
       console.log('a:' + a)
       console.log('body:' + this.el.scrollHeight)
