@@ -91,9 +91,9 @@ export default {
           self.imgTag = res.seccuss.imgTag
           self.images = self.images.concat(res.seccuss.images)
 
-          if(res.seccuss.images.length != 0){
+          if (res.seccuss.images.length !== 0) {
             self.isbottom = 0
-          }else{
+          } else {
             self.isbottom = 1
           }
 
