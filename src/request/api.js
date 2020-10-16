@@ -43,3 +43,10 @@ export function getFamouWorkCont(workId, chapterId) {
     params: { workId: workId, chapterId: chapterId }
   })
 }
+export function getPictureList(page) {
+  return Service({
+    url: '/api/work/getPictureList',
+    method: 'get',
+    params: { page: page}
+  })
+}

@@ -23,7 +23,9 @@
             <el-button size="medium">中等按钮</el-button>
             <el-button size="medium">中等按钮</el-button>
           </div>
-          <div class="picCon"></div>
+          <div class="picCon">
+            
+          </div>
         </div>
       </div>
     </div>
@@ -37,6 +39,7 @@ import '../../../static/books_css/main.css'
 import publicTop from '@/components/public/publicTop'
 import publicNav from '@/components/public/publicNav'
 import publicFooter from '@/components/public/publicFooter'
+import {getPictureList} from '@/request/api.js'
 export default {
   name: 'PictureList',
   components: {
@@ -49,8 +52,21 @@ export default {
       sourceUrl: 'https://blog.myfeiyou.com'
     }
   },
-  created: function() {},
-  methods: {}
+  created: function() {
+    this.getPictureListPage(1)
+  },
+  methods: {
+    getPictureListPage(val) {
+      var self = this
+      getPictureList(val).then(res => {
+        if (res.errorNo === '0') {
+          
+        } else {
+          this.$message.error('请求错误, 请重试！')
+        }
+      })
+    }
+  }
 }
 </script>
 
