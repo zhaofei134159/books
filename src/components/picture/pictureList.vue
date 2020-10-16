@@ -82,7 +82,8 @@ export default {
     handleScroll() {
       let a = this.el.getBoundingClientRect().bottom
       a = Math.ceil(a)
-      console.log(a)
+      console.log('a:'+a)
+      console.log('body:'+document.body.scrollHeight))
       console.log(this.clientHeight - 100)
       if (a * this.page >= (this.clientHeight - 100)) {
         this.isbottom = -1
