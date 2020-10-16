@@ -14,10 +14,10 @@
         </div>
         <div class="mainCont">
           <div class="bottonTitle">
-            <div v-for="(val, index) in imgTag" :key="index" >
+            <span v-for="(val, index) in imgTag" :key="index" >
               <el-button class="bottonClass" size="medium" v-if="tagId === val.id" type="primary" plain  @click="getTagPic(val.id)" >{{ val.name }} <span>{{val.count}}</span></el-button>
               <el-button class="bottonClass" size="medium" v-else plain  @click="getTagPic(val.id)" >{{ val.name }} <span>{{val.count}}</span></el-button>
-            </div>
+            </span>
           </div>
           <el-divider></el-divider>
           <div class="picCon" ref="my_pull">
@@ -87,8 +87,6 @@ export default {
     handleScroll() {
       let a = this.el.getBoundingClientRect().bottom
       a = Math.ceil(a)
-      console.log(a)
-      console.log(document.documentElement.clientHeight)
       if (a <= (document.documentElement.clientHeight - 80)) {
         this.isbottom = -1
         this.page++
