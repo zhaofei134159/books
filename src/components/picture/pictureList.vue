@@ -22,7 +22,7 @@
             <el-row>
               <el-col v-for="(val, index) in images" :span="5" :key="index" class="colClass">
                 <el-card>
-                  <el-image :src="val.wide_src" :preview-src-list="val.wide_src" lazy></el-image>
+                  <el-image :src="val.wide_src" :preview-src-list="[val.wide_src]" lazy></el-image>
                 </el-card>
               </el-col>
             </el-row>
