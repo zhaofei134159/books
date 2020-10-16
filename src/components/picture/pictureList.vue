@@ -82,6 +82,9 @@ export default {
       let b = this.el.getBoundingClientRect().top
       a = Math.abs(Math.ceil(a))
       b = Math.abs(Math.ceil(b))
+      console.log('a:' + a)
+      console.log('b:' + b)
+      console.log('body:' + this.el.scrollHeight)
       if (a * b >= (this.el.scrollHeight - 10)) {
         this.isbottom = -1
         this.page++
