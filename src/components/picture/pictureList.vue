@@ -64,7 +64,7 @@ export default {
       images: {},
       clientHeight: 0,
       page: 1,
-      isbottom: -1,
+      isbottom: -1
     }
   },
   mounted: function() {
@@ -76,9 +76,9 @@ export default {
   },
   methods: {
     handleScroll() {
-      let a = this.el.getBoundingClientRect().bottom;
-      a = Math.ceil(a);
-      if (a == this.clientHeight) {
+      let a = this.el.getBoundingClientRect().bottom
+      a = Math.ceil(a)
+      if (a === this.clientHeight) {
         this.isbottom = -1
         this.page++
         this.getPictureListPage(this.page)
