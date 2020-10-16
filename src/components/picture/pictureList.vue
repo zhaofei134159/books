@@ -13,7 +13,8 @@
           </el-breadcrumb>
         </div>
         <div class="mainCont">
-
+          <div class="bottonTitle"></div>
+          <div class="picCon"></div>
         </div>
       </div>
     </div>
@@ -45,10 +46,6 @@ export default {
 </script>
 
 <style>
-.titleCont{width:100%;}
-.titleInfo{font-size: 20px;font-weight: bold;padding: 10px;}
-.titleInfo span{font-size:15px; color:#999;}
-.descInfo{text-indent: 27px; font-size: 14px;}
-.chapterCont{width:100%;margin-bottom: 20px;}
-.chapterCont div{width: 39%;float: left;text-align: left;padding-left: 8%;margin-bottom: 1%;}
+.bottonTitle{width:100%;}
+.picCon{width:100%;}
 </style>
