@@ -80,16 +80,18 @@ export default {
     handleScroll() {
       let a = this.el.getBoundingClientRect().bottom
       let b = this.el.getBoundingClientRect().top
-      a = Math.abs(Math.ceil(a))
-      b = Math.abs(Math.ceil(b))
+      // a = Math.abs(Math.ceil(a))
+      // b = Math.abs(Math.ceil(b))
+      a = Math.ceil(a)
+      b = Math.ceil(b)
       console.log('a:' + a)
       console.log('b:' + b)
       console.log('body:' + this.el.scrollHeight)
-      if (a * b >= (this.el.scrollHeight - 10)) {
-        this.isbottom = -1
-        this.page++
-        this.getPictureListPage(this.page)
-      }
+      // if (a * b >= (this.el.scrollHeight - 10)) {
+      //   this.isbottom = -1
+      //   this.page++
+      //   this.getPictureListPage(this.page)
+      // }
     },
     getPictureListPage(val) {
       var self = this
