@@ -89,7 +89,13 @@ export default {
       getPictureList(val).then(res => {
         if (res.errorNo === '0') {
           self.imgTag = res.seccuss.imgTag
-          self.images.append(res.seccuss.images)
+          self.images = self.images.concat(res.seccuss.images)
+
+          if(res.seccuss.images.length != 0){
+            self.isbottom = 0
+          }else{
+            self.isbottom = 1
+          }
 
           window.removeEventListener('scroll', self.handleScroll)
         } else {
