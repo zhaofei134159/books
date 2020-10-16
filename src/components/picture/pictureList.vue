@@ -82,7 +82,7 @@ export default {
     handleScroll() {
       let a = this.el.getBoundingClientRect().bottom
       a = Math.ceil(a)
-      if (a === (this.clientHeight-100)) {
+      if (a === (this.clientHeight - 100)) {
         this.isbottom = -1
         this.page++
         this.getPictureListPage(this.page)
