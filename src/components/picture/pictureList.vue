@@ -61,7 +61,7 @@ export default {
     return {
       sourceUrl: 'https://blog.myfeiyou.com',
       imgTag: {},
-      images: {},
+      images: [],
       clientHeight: 0,
       page: 1,
       isbottom: -1
