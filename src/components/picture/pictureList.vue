@@ -27,6 +27,14 @@
               </el-col>
             </el-row>
 
+            <div v-if="isbottom == -1" class="isbottom">
+                <i class="iconfont icon-jiazai1"></i>
+                <span>加载中，请稍后</span>
+            </div>
+            <div v-if="isbottom == 1" class="isbottom">
+                <span>没有更多数据了</span>
+            </div>
+
           </div>
         </div>
       </div>
@@ -53,19 +61,37 @@ export default {
     return {
       sourceUrl: 'https://blog.myfeiyou.com',
       imgTag: {},
-      images: {}
+      images: {},
+      clientHeight: 0,
+      page: 1,
+      isbottom: -1,
     }
+  },
+  mounted: function() {
+    this.clientHeight = document.documentElement.clientHeight
+    window.addEventListener('scroll', this.handleScroll)
   },
   created: function() {
     this.getPictureListPage(1)
   },
   methods: {
+    handleScroll() {
+      let a = this.el.getBoundingClientRect().bottom;
+      a = Math.ceil(a);
+      if (a == this.clientHeight) {
+        this.isbottom = -1
+        this.page++
+        this.getPictureListPage(this.page)
+      }
+    },
     getPictureListPage(val) {
       var self = this
       getPictureList(val).then(res => {
         if (res.errorNo === '0') {
           self.imgTag = res.seccuss.imgTag
-          self.images = res.seccuss.images
+          self.images.append(res.seccuss.images)
+
+          window.removeEventListener('scroll', self.handleScroll)
         } else {
           this.$message.error('请求错误, 请重试！')
         }
