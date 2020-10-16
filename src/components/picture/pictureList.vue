@@ -14,7 +14,7 @@
         </div>
         <div class="mainCont">
           <div class="bottonTitle">
-            <el-button class="bottonClass" v-for="(val, index) in imgTag" :key="index" size="medium"  @click="getTagPic(val.id)" >{{ val.name }} <span>{{val.count}}</span></el-button>
+            <el-button class="bottonClass" v-for="(val, index) in imgTag" :key="index" size="medium" type="primary" plain  @click="getTagPic(val.id)" >{{ val.name }} <span>{{val.count}}</span></el-button>
           </div>
           <el-divider></el-divider>
           <div class="picCon" ref="my_pull">
