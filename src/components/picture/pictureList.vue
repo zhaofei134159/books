@@ -13,7 +13,16 @@
           </el-breadcrumb>
         </div>
         <div class="mainCont">
-          <div class="bottonTitle"></div>
+          <div class="bottonTitle">
+            <el-button size="medium">中等按钮</el-button>
+            <el-button size="medium">中等按钮</el-button>
+            <el-button size="medium">中等按钮</el-button>
+            <el-button size="medium">中等按钮</el-button>
+            <el-button size="medium">中等按钮</el-button>
+            <el-button size="medium">中等按钮</el-button>
+            <el-button size="medium">中等按钮</el-button>
+            <el-button size="medium">中等按钮</el-button>
+          </div>
           <div class="picCon"></div>
         </div>
       </div>
