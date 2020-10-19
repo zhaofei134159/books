@@ -25,7 +25,7 @@
             <el-row>
               <el-col v-for="(val, index) in images" :span="5" :key="index" class="colClass">
                 <el-card>
-                  <el-image :src="val.wide_src" :preview-src-list="[val.wide_src]" lazy>
+                  <el-image :src="val.wide_src" :preview-src-list="[val.wide_src,val.narrow_src]" lazy>
                     <div slot="placeholder" class="image-slot">
                       加载中<span class="dot">...</span>
                     </div>
