@@ -34,15 +34,14 @@ export default {
   }
 }
 
-var _hmt = _hmt || [];
+var _hmt = [];
 (function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?b0f84c268dbc78df9335cfa39643f377";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
+  var hm = document.createElement('script')
+  hm.src = "https://hm.baidu.com/hm.js?b0f84c268dbc78df9335cfa39643f377"
+  var s = document.getElementsByTagName("script")[0]
+  s.parentNode.insertBefore(hm, s)
+})()
 </script>
-
 
 <style>
 </style>
