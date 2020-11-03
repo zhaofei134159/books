@@ -63,6 +63,10 @@ export default {
   created: function() {
     this.socket_link()
   },
+  destroyed: function() {
+    this.socket.close() //离开路由之后断开websocket连接
+    this.socket = null
+  },
   methods: {
     socket_link() {
       var url = 'ws://104.243.18.161:8000'
@@ -77,15 +81,6 @@ export default {
       this.socket.onclose = function() {
         console.log('断开连接')
       }
-    },
-    dis() {
-      this.socket.close()
-      this.socket = null
-    },
-    sendText() {
-      var val = '开始开始'
-      console.log(val)
-      this.socket.send(val)
     }
   }
 }
