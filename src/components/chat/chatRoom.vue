@@ -74,8 +74,9 @@ export default {
       this.socket = new WebSocket(url)
       this.socket.onopen = function() {
         console.log('连接成功')
-        this.$notify({
-          title: '连接成功',
+        this.$message({
+          showClose: true,
+          message: '连接成功',
           type: 'success'
         })
       }
