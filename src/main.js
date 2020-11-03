@@ -5,6 +5,7 @@ import ElementUI from 'element-ui'
 import App from './App'
 import router from './router'
 
+Vue.prototype.$message = Message;
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 
