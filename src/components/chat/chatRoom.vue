@@ -44,11 +44,11 @@
 
 <script>
 import '../../../static/books_css/main.css'
-import Vue from 'vue'
 import publicTop from '@/components/public/publicTop'
 import publicNav from '@/components/public/publicNav'
 import publicFooter from '@/components/public/publicFooter'
-export default new Vue{
+import { Message } from "element-ui"
+export default{
   name: 'ChatRoom',
   components: {
     publicTop,
@@ -75,7 +75,7 @@ export default new Vue{
       this.socket = new WebSocket(url)
       this.socket.onopen = function() {
         console.log('连接成功')
-        Vue.$message({
+        Message({
           showClose: true,
           message: '连接成功',
           type: 'success'
@@ -87,7 +87,7 @@ export default new Vue{
       }
       this.socket.onclose = function() {
         console.log('断开连接')
-        Vue.$message({
+        Message({
           showClose: true,
           message: '断开连接',
           type: 'error'
