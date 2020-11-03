@@ -86,6 +86,11 @@ export default {
       }
       this.socket.onclose = function() {
         console.log('断开连接')
+        this.$message({
+          showClose: true,
+          message: '断开连接',
+          type: 'error'
+        });
       }
     }
   }
