@@ -56,7 +56,7 @@ export default {
   },
   data () {
     return {
-      text:'',
+      text: '',
       sourceUrl: 'https://blog.myfeiyou.com',
       socket: null
     }
