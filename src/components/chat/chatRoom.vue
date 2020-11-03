@@ -90,7 +90,7 @@ export default {
           showClose: true,
           message: '断开连接',
           type: 'error'
-        });
+        })
       }
     }
   }
