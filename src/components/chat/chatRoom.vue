@@ -77,7 +77,7 @@ export default {
         this.$notify({
           title: '连接成功',
           type: 'success'
-        });
+        })
       }
       this.socket.onmessage = function(msg) {
         // log(msg)
