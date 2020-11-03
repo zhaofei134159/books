@@ -47,7 +47,7 @@ import '../../../static/books_css/main.css'
 import publicTop from '@/components/public/publicTop'
 import publicNav from '@/components/public/publicNav'
 import publicFooter from '@/components/public/publicFooter'
-import { Message } from "element-ui"
+import { Message } from 'element-ui'
 export default{
   name: 'ChatRoom',
   components: {
