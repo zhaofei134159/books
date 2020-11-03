@@ -44,6 +44,7 @@
 
 <script>
 import '../../../static/books_css/main.css'
+import Vue from 'vue'
 import publicTop from '@/components/public/publicTop'
 import publicNav from '@/components/public/publicNav'
 import publicFooter from '@/components/public/publicFooter'
