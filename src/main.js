@@ -2,10 +2,11 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import ElementUI from 'element-ui'
+import { Message } from "element-ui";
 import App from './App'
 import router from './router'
 
-Vue.prototype.$message = Message;
+Vue.prototype.$message = Message
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 
