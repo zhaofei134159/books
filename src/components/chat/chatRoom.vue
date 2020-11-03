@@ -64,7 +64,7 @@ export default {
     this.socket_link()
   },
   destroyed: function() {
-    this.socket.close() //离开路由之后断开websocket连接
+    this.socket.close()
     this.socket = null
   },
   methods: {
