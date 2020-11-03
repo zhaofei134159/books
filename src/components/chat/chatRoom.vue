@@ -100,7 +100,7 @@ export default {
 .mainInputCenterCont{width:100%;}
 .mainInputCenterCont textarea{width: 97%;border-radius: 3px;/* border: none; */padding: 10px;min-height: 100px;resize: none;}
 .mainInputCenterFooter{width:100%;height:40px;}
-.mainInputCenterName{width:50%;}
-.mainInputCenterSend{width:50%;text-align:right;}
+.mainInputCenterName{width:33%;float:left;}
+.mainInputCenterSend{width:50%;float:right;text-align:right;}
 .mainSend{width:100px;}
 </style>
