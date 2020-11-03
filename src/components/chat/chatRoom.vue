@@ -23,10 +23,12 @@
                       <textarea name="sendCont" id="sendCont"  autocomplete="off" placeholder="请输入内容" maxlength="300"></textarea>
                   </div>
                   <div class="mainInputCenterFooter">
-                      <div>
-                          <el-input type="text" placeholder="名称" v-model="text" maxlength="10" show-word-limit> </el-input>
+                      <div class="mainInputCenterName">
+                        <el-input type="text" placeholder="名称" v-model="text" maxlength="10" show-word-limit> </el-input>
                       </div>
-                      <el-button plain class="mainSend" @click="sendText()">发送</el-button>
+                      <div class="mainInputCenterSend">
+                        <el-button plain class="mainSend" @click="sendText()">发送</el-button>
+                      </div>
                   </div>
                 </div>
               </div>
@@ -97,6 +99,8 @@ export default {
 .mainInputCenterTop{width:100%;height:20px;}
 .mainInputCenterCont{width:100%;}
 .mainInputCenterCont textarea{width: 97%;border-radius: 3px;/* border: none; */padding: 10px;min-height: 100px;resize: none;}
-.mainInputCenterFooter{width:100%;height:40px;text-align:right;}
+.mainInputCenterFooter{width:100%;height:40px;}
+.mainInputCenterName{width:50%;}
+.mainInputCenterSend{width:50%;text-align:right;}
 .mainSend{width:100px;}
 </style>
