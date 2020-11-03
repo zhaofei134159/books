@@ -2,20 +2,17 @@
 	<div id="bodyDiv">
 		<publicTop></publicTop>
 
-		<publicNav :activeSub="2"></publicNav>
+		<publicNav :activeSub="3"></publicNav>
 
 		<div class="rowDiv">
 			<div id="mainDiv">
 				<div class="crumbs">
 					<el-breadcrumb separator-class="el-icon-arrow-right">
+            <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
 						<el-breadcrumb-item>聊天室</el-breadcrumb-item>
 					</el-breadcrumb>
 				</div>
 				<div class="mainCont">
-          <div class="mainLeft">
-              <div class="mainLeftNav"></div>
-              <div class="mainLeftZhu"></div>
-          </div>
           <div class="mainRight">
               <div class="mainShow"></div>
               <div class="mainInput">
@@ -90,10 +87,7 @@ export default {
 </script>
 
 <style>
-.mainLeft{width:26%;height:701px;float:left;border:solid 1px #ccc;}
-.mainLeftNav{width:20%;height:701px;float:left;background:black;}
-.mainLeftZhu{width:80%;height:701px;float:left;background:red;}
-.mainRight{width:72%;height:700px;float:right;}
+.mainRight{width:60%;height:700px;margin:auto;}
 .mainShow{width:100%;height:500px;border:solid 1px #ccc;border-bottom:none;}
 .mainInput{width:100%;height:200px;border:solid 1px #ccc;}
 .mainInputCenter{width:95%;height:100%;margin:0 auto;}
