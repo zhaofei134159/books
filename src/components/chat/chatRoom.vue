@@ -20,7 +20,10 @@
                   <div class="mainInputCenterTop">
                   </div>
                   <div class="mainInputCenterCont">
-                      <textarea name="sendCont" id="sendCont"  autocomplete="off" placeholder="请输入内容" maxlength="30"></textarea>
+                      <div>
+                          <el-input type="text" placeholder="名称" v-model="text" maxlength="10" show-word-limit> </el-input>
+                      </div>
+                      <textarea name="sendCont" id="sendCont"  autocomplete="off" placeholder="请输入内容" maxlength="300"></textarea>
                   </div>
                   <div class="mainInputCenterFooter">
                       <el-button plain class="mainSend" @click="sendText()">发送</el-button>
@@ -87,13 +90,13 @@ export default {
 </script>
 
 <style>
-.mainRight{width:60%;height:700px;margin:auto;}
+.mainRight{width:60%;height:700px;margin:0px auto;padding-top:15px;}
 .mainShow{width:100%;height:500px;border:solid 1px #ccc;border-bottom:none;}
 .mainInput{width:100%;height:200px;border:solid 1px #ccc;}
 .mainInputCenter{width:95%;height:100%;margin:0 auto;}
 .mainInputCenterTop{width:100%;height:20px;}
 .mainInputCenterCont{width:100%;}
-.mainInputCenterCont textarea{width: 97%;border-radius: 10px;/* border: none; */padding: 10px;min-height: 100px;resize: none;}
+.mainInputCenterCont textarea{width: 97%;border-radius: 10px;/* border: none; */padding: 10px;min-height: 50px;resize: none;}
 .mainInputCenterFooter{width:100%;height:40px;text-align:right;}
 .mainSend{width:100px;}
 </style>
