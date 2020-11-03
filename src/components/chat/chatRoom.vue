@@ -48,7 +48,7 @@ import Vue from 'vue'
 import publicTop from '@/components/public/publicTop'
 import publicNav from '@/components/public/publicNav'
 import publicFooter from '@/components/public/publicFooter'
-export default {
+export default new Vue{
   name: 'ChatRoom',
   components: {
     publicTop,
