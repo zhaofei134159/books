@@ -74,7 +74,7 @@ export default {
       this.socket = new WebSocket(url)
       this.socket.onopen = function() {
         console.log('连接成功')
-        this.$message({
+        vue.$message({
           showClose: true,
           message: '连接成功',
           type: 'success'
@@ -86,7 +86,7 @@ export default {
       }
       this.socket.onclose = function() {
         console.log('断开连接')
-        this.$message({
+        vue.$message({
           showClose: true,
           message: '断开连接',
           type: 'error'
