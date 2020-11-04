@@ -24,7 +24,7 @@
                   </div>
                   <div class="mainInputCenterFooter">
                       <div class="mainInputCenterName">
-                        <el-input type="text" placeholder="名称" ref="sendName" v-model="text" maxlength="10" show-word-limit> </el-input>
+                        <el-input type="text" placeholder="名称" ref="sendName" value="{{ sendName }}" v-model="text" maxlength="10" show-word-limit> </el-input>
                       </div>
                       <div class="mainInputCenterSend">
                         <el-button plain class="mainSend" @click="sendText()">发送</el-button>
@@ -59,10 +59,12 @@ export default{
     return {
       text: '',
       sourceUrl: 'https://blog.myfeiyou.com',
-      socket: null
+      socket: null,
+      sendName: ''
     }
   },
   created: function() {
+    this.sendName = localStorage.getItem('sendName')
     this.socket_link()
   },
   destroyed: function() {
@@ -99,6 +101,9 @@ export default{
       var jsonobj = {'name': sendName, 'cont': sendCont}
       var json = JSON.stringify(jsonobj)
       this.socket.send(json)
+
+      this.$refs.sendCont.value = ''
+      localStorage.setItem('sendName', sendName)
     }
   }
 }
