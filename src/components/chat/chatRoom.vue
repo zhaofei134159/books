@@ -98,11 +98,11 @@ export default{
     sendText() {
       var sendCont = this.$refs.sendCont.value
       var sendName = this.$refs.sendName.value
-      if(sendName=='') {
+      if (sendName == '') {
         Message({showClose: true, message: '名称不能为空', type: 'error'})
         return false
       }
-      if(sendCont=='') {
+      if (sendCont == '') {
         Message({showClose: true, message: '内容不能为空', type: 'error'})
         return false
       }
