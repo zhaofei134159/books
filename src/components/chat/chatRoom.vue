@@ -20,7 +20,7 @@
                   <div class="mainInputCenterTop">
                   </div>
                   <div class="mainInputCenterCont">
-                      <textarea name="sendCont" id="sendCont"  autocomplete="off" placeholder="请输入内容" maxlength="300"></textarea>
+                      <textarea name="sendCont" id="sendCont"  autocomplete="off" placeholder="请输入内容" maxlength="300" show-word-limit></textarea>
                   </div>
                   <div class="mainInputCenterFooter">
                       <div class="mainInputCenterName">
@@ -82,7 +82,6 @@ export default{
         })
       }
       this.socket.onmessage = function(msg) {
-        // log(msg)
         console.log(msg)
       }
       this.socket.onclose = function() {
@@ -93,6 +92,9 @@ export default{
           type: 'error'
         })
       }
+    },
+    sendText() {
+
     }
   }
 }
