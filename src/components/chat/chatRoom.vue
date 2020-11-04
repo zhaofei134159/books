@@ -60,11 +60,10 @@ export default{
       text: '',
       sourceUrl: 'https://blog.myfeiyou.com',
       socket: null,
-      sendName: ''
+      sendName: localStorage.getItem('sendName')
     }
   },
   created: function() {
-    this.sendName = localStorage.getItem('sendName')
     this.socket_link()
   },
   destroyed: function() {
