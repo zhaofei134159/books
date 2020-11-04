@@ -98,7 +98,7 @@ export default{
       var sendName = this.$refs.sendName.value
       var jsonobj = {'name': sendName, 'cont': sendCont}
       var json = JSON.stringify(jsonobj)
-      socket.send(json)
+      this.socket.send(json)
     }
   }
 }
