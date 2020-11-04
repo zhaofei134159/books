@@ -61,7 +61,7 @@ export default{
       sourceUrl: 'https://blog.myfeiyou.com',
       socket: null,
       sendName: localStorage.getItem('sendName'),
-      clientIp: '',
+      clientIp: ''
     }
   },
   created: function() {
@@ -97,7 +97,7 @@ export default{
         } else {
           this.$message.error('请求错误, 请重试！')
         }
-      }) 
+      })
     },
     sendText() {
       var sendCont = this.$refs.sendCont.value
@@ -111,7 +111,7 @@ export default{
         return false
       }
 
-      var jsonobj = {'name': sendName, 'cont': sendCont, 'ip':this.clientIp}
+      var jsonobj = {'name': sendName, 'cont': sendCont, 'ip': this.clientIp}
       var json = JSON.stringify(jsonobj)
       this.socket.send(json)
 
