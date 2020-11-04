@@ -64,6 +64,7 @@ export default{
     }
   },
   created: function() {
+    console.log(this.sendName)
     this.socket_link()
   },
   destroyed: function() {
