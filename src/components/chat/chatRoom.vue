@@ -99,12 +99,12 @@ export default{
       var sendCont = this.$refs.sendCont.value
       var sendName = this.$refs.sendName.value
       if(sendName=='') {
-        Message({showClose: true,message: '名称不能为空',type: 'error'})
-        return false;
+        Message({showClose: true, message: '名称不能为空', type: 'error'})
+        return false
       }
       if(sendCont=='') {
-        Message({showClose: true,message: '内容不能为空',type: 'error'})
-        return false;
+        Message({showClose: true, message: '内容不能为空', type: 'error'})
+        return false
       }
 
       var jsonobj = {'name': sendName, 'cont': sendCont}
