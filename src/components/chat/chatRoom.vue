@@ -20,11 +20,11 @@
                   <div class="mainInputCenterTop">
                   </div>
                   <div class="mainInputCenterCont">
-                      <textarea name="sendCont" id="sendCont"  autocomplete="off" placeholder="请输入内容" maxlength="300" show-word-limit></textarea>
+                      <textarea name="sendCont" ref="sendCont"  autocomplete="off" placeholder="请输入内容" maxlength="300" show-word-limit></textarea>
                   </div>
                   <div class="mainInputCenterFooter">
                       <div class="mainInputCenterName">
-                        <el-input type="text" placeholder="名称" id="sendName" v-model="text" maxlength="10" show-word-limit> </el-input>
+                        <el-input type="text" placeholder="名称" ref="sendName" v-model="text" maxlength="10" show-word-limit> </el-input>
                       </div>
                       <div class="mainInputCenterSend">
                         <el-button plain class="mainSend" @click="sendText()">发送</el-button>
@@ -94,8 +94,8 @@ export default{
       }
     },
     sendText() {
-      var sendCont = $('#sendCont').val()
-      var sendName = $('#sendName').val()
+      var sendCont = this.$refs.sendCont.value
+      var sendName = this.$refs.sendName.value
       console.log(sendCont);
       console.log(sendName);
       
