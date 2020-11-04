@@ -96,9 +96,8 @@ export default{
     sendText() {
       var sendCont = this.$refs.sendCont.value
       var sendName = this.$refs.sendName.value
-      console.log(sendCont);
-      console.log(sendName);
-      
+      console.log(sendCont)
+      console.log(sendName)
     }
   }
 }
