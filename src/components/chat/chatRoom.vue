@@ -24,7 +24,7 @@
                   </div>
                   <div class="mainInputCenterFooter">
                       <div class="mainInputCenterName">
-                        <el-input type="text" placeholder="名称" v-model="text" maxlength="10" show-word-limit> </el-input>
+                        <el-input type="text" placeholder="名称" id="sendName" v-model="text" maxlength="10" show-word-limit> </el-input>
                       </div>
                       <div class="mainInputCenterSend">
                         <el-button plain class="mainSend" @click="sendText()">发送</el-button>
@@ -94,7 +94,11 @@ export default{
       }
     },
     sendText() {
-
+      var sendCont = $('#sendCont').val()
+      var sendName = $('#sendName').val()
+      console.log(sendCont);
+      console.log(sendName);
+      
     }
   }
 }
