@@ -96,8 +96,14 @@ export default{
     sendText() {
       var sendCont = this.$refs.sendCont.value
       var sendName = this.$refs.sendName.value
-      console.log(sendCont)
-      console.log(sendName)
+      
+      var cip = returnCitySN["cip"]
+      console.log(cip)
+
+
+      // var jsonobj = {'type':'php','name':sendName,'cont':sendCont};
+      // var json = JSON.stringify(jsonobj);
+      // socket.send(json);
     }
   }
 }
