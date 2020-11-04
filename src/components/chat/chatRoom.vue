@@ -24,7 +24,7 @@
                   </div>
                   <div class="mainInputCenterFooter">
                       <div class="mainInputCenterName">
-                        <el-input type="text" placeholder="名称" ref="sendName" v-model="sendName" v-model="text" maxlength="10" show-word-limit> </el-input>
+                        <el-input type="text" placeholder="名称" ref="sendName" v-model="sendName" maxlength="10" show-word-limit> </el-input>
                       </div>
                       <div class="mainInputCenterSend">
                         <el-button plain class="mainSend" @click="sendText()">发送</el-button>
