@@ -47,7 +47,7 @@ import '../../../static/books_css/main.css'
 import publicTop from '@/components/public/publicTop'
 import publicNav from '@/components/public/publicNav'
 import publicFooter from '@/components/public/publicFooter'
-import {getClientIp} from '@/request/api.js'
+import { Message } from 'element-ui'
 export default{
   name: 'ChatRoom',
   components: {
@@ -60,14 +60,12 @@ export default{
       text: '',
       sourceUrl: 'https://blog.myfeiyou.com',
       socket: null,
-      sendName: localStorage.getItem('sendName'),
-      clientIp: ''
+      sendName: localStorage.getItem('sendName')
     }
   },
   created: function() {
     console.log(this.sendName)
     this.socket_link()
-    this.getClientIpRes()
   },
   destroyed: function() {
     this.socket.close()
@@ -79,39 +77,37 @@ export default{
       this.socket = new WebSocket(url)
       this.socket.onopen = function() {
         console.log('连接成功')
-        this.$message({message: '连接成功', type: 'success'})
+        Message({
+          showClose: true,
+          message: '连接成功',
+          type: 'success'
+        })
       }
       this.socket.onmessage = function(msg) {
         console.log(msg)
       }
       this.socket.onclose = function() {
-        this.$message.error('断开连接')
         console.log('断开连接')
+        Message({
+          showClose: true,
+          message: '断开连接',
+          type: 'error'
+        })
       }
-    },
-    getClientIpRes() {
-      var self = this
-      getClientIp().then(res => {
-        if (res.errorNo === '0') {
-          self.clientIp = res.seccuss.clientIp
-        } else {
-          this.$message.error('请求错误, 请重试！')
-        }
-      })
     },
     sendText() {
       var sendCont = this.$refs.sendCont.value
       var sendName = this.$refs.sendName.value
       if (sendName === '') {
-        this.$message.error('名称不能为空')
+        Message({showClose: true, message: '名称不能为空', type: 'error'})
         return false
       }
       if (sendCont === '') {
-        this.$message.error('内容不能为空')
+        Message({showClose: true, message: '内容不能为空', type: 'error'})
         return false
       }
 
-      var jsonobj = {'name': sendName, 'cont': sendCont, 'ip': this.clientIp}
+      var jsonobj = {'name': sendName, 'cont': sendCont}
       var json = JSON.stringify(jsonobj)
       this.socket.send(json)
 

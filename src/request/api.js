@@ -50,10 +50,3 @@ export function getPictureList(page, tagId) {
     params: { page: page, tag: tagId }
   })
 }
-export function getClientIp() {
-  return Service({
-    url: '/api/work/getClientIp',
-    method: 'get',
-    params: {}
-  })
-}
