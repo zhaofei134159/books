@@ -101,7 +101,7 @@ export default{
       console.log(cip)
 
 
-      // var jsonobj = {'type':'php','name':sendName,'cont':sendCont};
+      var jsonobj = {'type':'php','name':sendName,'cont':sendCont};
       // var json = JSON.stringify(jsonobj);
       // socket.send(json);
     }
