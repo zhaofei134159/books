@@ -60,7 +60,7 @@ export default{
       text: '',
       sourceUrl: 'https://blog.myfeiyou.com',
       socket: null,
-      sign: window.btoa("chatRoom"),
+      sign: window.btoa('chatRoom'),
       sendName: localStorage.getItem('sendName')
     }
   },
@@ -108,7 +108,7 @@ export default{
         return false
       }
 
-      var jsonobj = {'name': sendName, 'cont': sendCont, 'sign':this.sign}
+      var jsonobj = {'name': sendName, 'cont': sendCont, 'sign': this.sign}
       var json = JSON.stringify(jsonobj)
       this.socket.send(json)
 
