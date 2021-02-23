@@ -67,6 +67,12 @@ export default{
   created: function() {
     console.log(this.sendName)
     this.socket_link()
+    
+    // 心跳测试
+    window.setInterval(() => {
+      this.heartbeatTest()
+    }, 10000)
+
   },
   destroyed: function() {
     this.socket.close()
@@ -114,6 +120,11 @@ export default{
 
       this.$refs.sendCont.value = ''
       localStorage.setItem('sendName', sendName)
+    },
+    heartbeatTest() {
+      var jsonobj = 'ping'
+      var json = JSON.stringify(jsonobj)
+      this.socket.send(json)
     }
   }
 }
