@@ -66,6 +66,12 @@ export default{
   },
   created: function() {
     console.log(this.sendName)
+
+    // 检测是否登录成功
+    window.setInterval(() => {
+      this.heartbeatTest()
+    }, 10000)
+
     this.socket_link()
     // 心跳测试
     window.setInterval(() => {
@@ -81,6 +87,9 @@ export default{
     this.socket = null
   },
   methods: {
+    check_login() {
+      
+    },
     socket_link() {
       var url = 'ws://104.243.18.161:8000'
       this.socket = new WebSocket(url)
