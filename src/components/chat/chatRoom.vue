@@ -67,12 +67,10 @@ export default{
   created: function() {
     console.log(this.sendName)
     this.socket_link()
-    
     // 心跳测试
     window.setInterval(() => {
       this.heartbeatTest()
     }, 10000)
-
   },
   destroyed: function() {
     this.socket.close()
