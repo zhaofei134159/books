@@ -73,7 +73,7 @@ export default{
     }, 10000)
   },
   destroyed: function() {
-    var jsonobj = {'name': sendName, 'cont': sendCont, 'type': 'out', 'sign': this.sign}
+    var jsonobj = {'name': this.sendName, 'cont': '', 'type': 'out', 'sign': this.sign}
     var json = JSON.stringify(jsonobj)
     this.socket.send(json)
 
