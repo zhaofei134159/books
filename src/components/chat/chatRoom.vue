@@ -24,7 +24,7 @@
                   </div>
                   <div class="mainInputCenterFooter">
                       <div class="mainInputCenterName">
-                         <a href="https://blog.myfeiyou.com/home/login" target="__block"><img src="https://blog.myfeiyou.com/public/home/login.png" width="32" alt="登录" title="登录"></a>
+                         <a href="https://blog.myfeiyou.com/home/login" target="__block"><img src="https://blog.myfeiyou.com/public/home/img/login.png" width="40" alt="登录" title="登录"></a>
                       </div>
                       <div class="mainInputCenterSend">
                         <el-button plain class="mainSend" @click="sendText()">发送</el-button>
