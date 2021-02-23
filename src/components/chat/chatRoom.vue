@@ -120,8 +120,7 @@ export default{
       localStorage.setItem('sendName', sendName)
     },
     heartbeatTest() {
-      var jsonobj = 'ping'
-      var json = JSON.stringify(jsonobj)
+      var json = 'ping'
       this.socket.send(json)
     }
   }
