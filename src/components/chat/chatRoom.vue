@@ -24,7 +24,7 @@
                   </div>
                   <div class="mainInputCenterFooter">
                       <div class="mainInputCenterName">
-                        <el-input type="text" placeholder="名称" ref="sendName" v-model="sendName" maxlength="10" show-word-limit> </el-input>
+                         <a href="https://blog.myfeiyou.com/home/login" target="__block"><img src="https://blog.myfeiyou.com/public/home/login.png" width="32" alt="登录" title="登录"></a>
                       </div>
                       <div class="mainInputCenterSend">
                         <el-button plain class="mainSend" @click="sendText()">发送</el-button>
@@ -73,6 +73,10 @@ export default{
     }, 10000)
   },
   destroyed: function() {
+    var jsonobj = {'name': sendName, 'cont': sendCont, 'type': 'out', 'sign': this.sign}
+    var json = JSON.stringify(jsonobj)
+    this.socket.send(json)
+
     this.socket.close()
     this.socket = null
   },
@@ -112,7 +116,7 @@ export default{
         return false
       }
 
-      var jsonobj = {'name': sendName, 'cont': sendCont, 'sign': this.sign}
+      var jsonobj = {'name': sendName, 'cont': sendCont, 'type': 'msg', 'sign': this.sign}
       var json = JSON.stringify(jsonobj)
       this.socket.send(json)
 
