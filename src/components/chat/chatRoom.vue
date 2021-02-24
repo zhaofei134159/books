@@ -74,7 +74,7 @@ export default{
       this.is_login = this.check_login()
 
       // 如果登录成功后才链接websocket
-      if(this.is_login){
+      if (this.is_login) {
         this.socket_link()
         // 心跳测试
         window.setInterval(() => {
@@ -82,8 +82,6 @@ export default{
         }, 10000)
       }
     }, 1000)
-
-    
   },
   destroyed: function() {
     var jsonobj = {'name': this.sendName, 'cont': '', 'type': 'out', 'sign': this.sign}
