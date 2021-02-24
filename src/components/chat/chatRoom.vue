@@ -70,18 +70,16 @@ export default{
     console.log(this.sendName)
 
     // 检测是否登录成功
-    // window.setInterval(() => {
-      this.is_login = this.check_login()
+    this.is_login = this.check_login()
 
-      // 如果登录成功后才链接websocket
-      if (this.is_login) {
-        this.socket_link()
-        // 心跳测试
-        window.setInterval(() => {
-          this.heartbeatTest()
-        }, 10000)
-      }
-    // }, 1000)
+    // 如果登录成功后才链接websocket
+    if (this.is_login) {
+      this.socket_link()
+      // 心跳测试
+      window.setInterval(() => {
+        this.heartbeatTest()
+      }, 10000)
+    }
   },
   destroyed: function() {
     var jsonobj = {'name': this.sendName, 'cont': '', 'type': 'out', 'sign': this.sign}
