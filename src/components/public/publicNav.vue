@@ -5,8 +5,8 @@
 			<el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
 				<el-menu-item index="1">首页</el-menu-item>
 				<el-menu-item index="2">图展</el-menu-item>
-				<el-menu-item index="3">聊天室</el-menu-item>
 				<el-menu-item index="4">关于我们</el-menu-item>
+				<!-- <el-menu-item index="3">聊天室</el-menu-item> -->
 				<!-- <el-submenu index="2">
 				<template slot="title">我的工作台</template>
 					<el-menu-item index="2-1">选项1</el-menu-item>
