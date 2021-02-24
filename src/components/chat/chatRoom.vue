@@ -47,6 +47,7 @@ import '../../../static/books_css/main.css'
 import publicTop from '@/components/public/publicTop'
 import publicNav from '@/components/public/publicNav'
 import publicFooter from '@/components/public/publicFooter'
+import {getLoginUserInfo} from '@/request/api.js'
 import { Message } from 'element-ui'
 export default{
   name: 'ChatRoom',
@@ -60,6 +61,7 @@ export default{
       text: '',
       sourceUrl: 'https://blog.myfeiyou.com',
       socket: null,
+      is_login: false,
       sign: window.btoa('chatRoom'),
       sendName: localStorage.getItem('sendName')
     }
@@ -69,14 +71,19 @@ export default{
 
     // 检测是否登录成功
     window.setInterval(() => {
-      this.heartbeatTest()
-    }, 10000)
+      this.is_login = this.check_login()
 
-    this.socket_link()
-    // 心跳测试
-    window.setInterval(() => {
-      this.heartbeatTest()
-    }, 10000)
+      // 如果登录成功后才链接websocket
+      if(this.is_login){
+        this.socket_link()
+        // 心跳测试
+        window.setInterval(() => {
+          this.heartbeatTest()
+        }, 10000)
+      }
+    }, 1000)
+
+    
   },
   destroyed: function() {
     var jsonobj = {'name': this.sendName, 'cont': '', 'type': 'out', 'sign': this.sign}
@@ -88,7 +95,13 @@ export default{
   },
   methods: {
     check_login() {
-      
+      getLoginUserInfo().then(res => {
+        if (res.errorNo === '0') {
+          console.log(res)
+        } else {
+          Message({showClose: true, message: '请求错误, 请重试！', type: 'error'})
+        }
+      })
     },
     socket_link() {
       var url = 'ws://104.243.18.161:8000'
