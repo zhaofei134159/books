@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { Message, Loading } from 'element-ui'
 let loadingInstance = null // 这里是loading
+axios.defaults.withCredentials = true // 带着cookie请求
 
 // 使用create方法创建axios实例
 export const Service = axios.create({
