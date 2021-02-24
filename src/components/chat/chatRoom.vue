@@ -70,7 +70,7 @@ export default{
     console.log(this.sendName)
 
     // 检测是否登录成功
-    window.setInterval(() => {
+    // window.setInterval(() => {
       this.is_login = this.check_login()
 
       // 如果登录成功后才链接websocket
@@ -81,7 +81,7 @@ export default{
           this.heartbeatTest()
         }, 10000)
       }
-    }, 1000)
+    // }, 1000)
   },
   destroyed: function() {
     var jsonobj = {'name': this.sendName, 'cont': '', 'type': 'out', 'sign': this.sign}
