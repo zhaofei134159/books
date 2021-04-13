@@ -51,9 +51,9 @@ export function getPictureList(page, tagId) {
   })
 }
 
-export function LoginUserInfo() {
+export function getLoginUserInfo() {
   return Service({
-    url: '/api/work/LoginUserInfo',
+    url: '/api/work/getLoginUserInfo',
     method: 'get',
     params: {}
   })
